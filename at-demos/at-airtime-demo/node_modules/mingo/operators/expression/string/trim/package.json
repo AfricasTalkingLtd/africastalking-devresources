@@ -1,0 +1,8 @@
+{
+  "main": "../../../../lib/operators/expression/string/trim.js",
+  "module": "../../../../es/operators/expression/string/trim.js",
+  "es2015": "../../../../es/operators/expression/string/trim.js",
+  "jsnext:main": "../../../../es/operators/expression/string/trim.js",
+  "types": "../../../../types/operators/expression/string/trim.d.ts",
+  "sideEffects": false
+}

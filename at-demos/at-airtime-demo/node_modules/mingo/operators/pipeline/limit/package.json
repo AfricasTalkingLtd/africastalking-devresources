@@ -1,0 +1,8 @@
+{
+  "main": "../../../lib/operators/pipeline/limit.js",
+  "module": "../../../es/operators/pipeline/limit.js",
+  "es2015": "../../../es/operators/pipeline/limit.js",
+  "jsnext:main": "../../../es/operators/pipeline/limit.js",
+  "types": "../../../types/operators/pipeline/limit.d.ts",
+  "sideEffects": false
+}

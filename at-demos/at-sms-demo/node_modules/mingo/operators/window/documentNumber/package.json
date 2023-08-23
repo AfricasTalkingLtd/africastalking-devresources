@@ -1,0 +1,8 @@
+{
+  "main": "../../../lib/operators/window/documentNumber.js",
+  "module": "../../../es/operators/window/documentNumber.js",
+  "es2015": "../../../es/operators/window/documentNumber.js",
+  "jsnext:main": "../../../es/operators/window/documentNumber.js",
+  "types": "../../../types/operators/window/documentNumber.d.ts",
+  "sideEffects": false
+}

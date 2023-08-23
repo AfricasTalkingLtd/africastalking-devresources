@@ -1,0 +1,8 @@
+{
+  "main": "../../../lib/operators/pipeline/replaceRoot.js",
+  "module": "../../../es/operators/pipeline/replaceRoot.js",
+  "es2015": "../../../es/operators/pipeline/replaceRoot.js",
+  "jsnext:main": "../../../es/operators/pipeline/replaceRoot.js",
+  "types": "../../../types/operators/pipeline/replaceRoot.d.ts",
+  "sideEffects": false
+}

@@ -1,0 +1,8 @@
+{
+  "main": "../../../lib/operators/projection/slice.js",
+  "module": "../../../es/operators/projection/slice.js",
+  "es2015": "../../../es/operators/projection/slice.js",
+  "jsnext:main": "../../../es/operators/projection/slice.js",
+  "types": "../../../types/operators/projection/slice.d.ts",
+  "sideEffects": false
+}

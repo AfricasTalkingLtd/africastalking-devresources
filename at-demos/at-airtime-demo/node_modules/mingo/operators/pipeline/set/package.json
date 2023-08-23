@@ -1,0 +1,8 @@
+{
+  "main": "../../../lib/operators/pipeline/set.js",
+  "module": "../../../es/operators/pipeline/set.js",
+  "es2015": "../../../es/operators/pipeline/set.js",
+  "jsnext:main": "../../../es/operators/pipeline/set.js",
+  "types": "../../../types/operators/pipeline/set.d.ts",
+  "sideEffects": false
+}

@@ -1,0 +1,8 @@
+{
+  "main": "../../../lib/operators/pipeline/match.js",
+  "module": "../../../es/operators/pipeline/match.js",
+  "es2015": "../../../es/operators/pipeline/match.js",
+  "jsnext:main": "../../../es/operators/pipeline/match.js",
+  "types": "../../../types/operators/pipeline/match.d.ts",
+  "sideEffects": false
+}

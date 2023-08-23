@@ -1,0 +1,8 @@
+{
+  "main": "../../../../lib/operators/expression/conditional/ifNull.js",
+  "module": "../../../../es/operators/expression/conditional/ifNull.js",
+  "es2015": "../../../../es/operators/expression/conditional/ifNull.js",
+  "jsnext:main": "../../../../es/operators/expression/conditional/ifNull.js",
+  "types": "../../../../types/operators/expression/conditional/ifNull.d.ts",
+  "sideEffects": false
+}

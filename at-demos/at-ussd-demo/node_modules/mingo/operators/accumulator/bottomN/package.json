@@ -1,0 +1,8 @@
+{
+  "main": "../../../lib/operators/accumulator/bottomN.js",
+  "module": "../../../es/operators/accumulator/bottomN.js",
+  "es2015": "../../../es/operators/accumulator/bottomN.js",
+  "jsnext:main": "../../../es/operators/accumulator/bottomN.js",
+  "types": "../../../types/operators/accumulator/bottomN.d.ts",
+  "sideEffects": false
+}

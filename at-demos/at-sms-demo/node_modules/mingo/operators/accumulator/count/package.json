@@ -1,0 +1,8 @@
+{
+  "main": "../../../lib/operators/accumulator/count.js",
+  "module": "../../../es/operators/accumulator/count.js",
+  "es2015": "../../../es/operators/accumulator/count.js",
+  "jsnext:main": "../../../es/operators/accumulator/count.js",
+  "types": "../../../types/operators/accumulator/count.d.ts",
+  "sideEffects": false
+}

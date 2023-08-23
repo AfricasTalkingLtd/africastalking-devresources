@@ -1,0 +1,8 @@
+{
+  "main": "../../../../lib/operators/expression/array/filter.js",
+  "module": "../../../../es/operators/expression/array/filter.js",
+  "es2015": "../../../../es/operators/expression/array/filter.js",
+  "jsnext:main": "../../../../es/operators/expression/array/filter.js",
+  "types": "../../../../types/operators/expression/array/filter.d.ts",
+  "sideEffects": false
+}

@@ -1,0 +1,8 @@
+{
+  "main": "../../../lib/operators/window/shift.js",
+  "module": "../../../es/operators/window/shift.js",
+  "es2015": "../../../es/operators/window/shift.js",
+  "jsnext:main": "../../../es/operators/window/shift.js",
+  "types": "../../../types/operators/window/shift.d.ts",
+  "sideEffects": false
+}

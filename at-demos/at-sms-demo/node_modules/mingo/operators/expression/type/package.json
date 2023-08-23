@@ -1,0 +1,8 @@
+{
+  "main": "../../../lib/operators/expression/type/index.js",
+  "module": "../../../es/operators/expression/type/index.js",
+  "es2015": "../../../es/operators/expression/type/index.js",
+  "jsnext:main": "../../../es/operators/expression/type/index.js",
+  "types": "../../../types/operators/expression/type/index.d.ts",
+  "sideEffects": false
+}

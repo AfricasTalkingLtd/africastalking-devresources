@@ -1,0 +1,8 @@
+{
+  "main": "../../lib/init/basic.js",
+  "module": "../../es/init/basic.js",
+  "es2015": "../../es/init/basic.js",
+  "jsnext:main": "../../es/init/basic.js",
+  "types": "../../types/init/basic.d.ts",
+  "sideEffects": true
+}

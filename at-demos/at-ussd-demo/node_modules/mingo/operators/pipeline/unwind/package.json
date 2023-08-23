@@ -1,0 +1,8 @@
+{
+  "main": "../../../lib/operators/pipeline/unwind.js",
+  "module": "../../../es/operators/pipeline/unwind.js",
+  "es2015": "../../../es/operators/pipeline/unwind.js",
+  "jsnext:main": "../../../es/operators/pipeline/unwind.js",
+  "types": "../../../types/operators/pipeline/unwind.d.ts",
+  "sideEffects": false
+}

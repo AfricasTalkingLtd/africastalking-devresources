@@ -1,0 +1,8 @@
+{
+  "main": "../../../../lib/operators/expression/string/regexMatch.js",
+  "module": "../../../../es/operators/expression/string/regexMatch.js",
+  "es2015": "../../../../es/operators/expression/string/regexMatch.js",
+  "jsnext:main": "../../../../es/operators/expression/string/regexMatch.js",
+  "types": "../../../../types/operators/expression/string/regexMatch.d.ts",
+  "sideEffects": false
+}

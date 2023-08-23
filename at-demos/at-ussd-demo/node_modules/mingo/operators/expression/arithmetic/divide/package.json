@@ -1,0 +1,8 @@
+{
+  "main": "../../../../lib/operators/expression/arithmetic/divide.js",
+  "module": "../../../../es/operators/expression/arithmetic/divide.js",
+  "es2015": "../../../../es/operators/expression/arithmetic/divide.js",
+  "jsnext:main": "../../../../es/operators/expression/arithmetic/divide.js",
+  "types": "../../../../types/operators/expression/arithmetic/divide.d.ts",
+  "sideEffects": false
+}

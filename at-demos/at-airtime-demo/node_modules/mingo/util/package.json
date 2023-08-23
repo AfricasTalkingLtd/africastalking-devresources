@@ -1,0 +1,8 @@
+{
+  "main": "../lib/util.js",
+  "module": "../es/util.js",
+  "es2015": "../es/util.js",
+  "jsnext:main": "../es/util.js",
+  "types": "../types/util.d.ts",
+  "sideEffects": false
+}

@@ -1,0 +1,8 @@
+{
+  "main": "../../../lib/operators/pipeline/lookup.js",
+  "module": "../../../es/operators/pipeline/lookup.js",
+  "es2015": "../../../es/operators/pipeline/lookup.js",
+  "jsnext:main": "../../../es/operators/pipeline/lookup.js",
+  "types": "../../../types/operators/pipeline/lookup.d.ts",
+  "sideEffects": false
+}

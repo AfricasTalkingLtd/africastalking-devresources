@@ -1,0 +1,8 @@
+{
+  "main": "../../../../lib/operators/expression/type/toLong.js",
+  "module": "../../../../es/operators/expression/type/toLong.js",
+  "es2015": "../../../../es/operators/expression/type/toLong.js",
+  "jsnext:main": "../../../../es/operators/expression/type/toLong.js",
+  "types": "../../../../types/operators/expression/type/toLong.d.ts",
+  "sideEffects": false
+}

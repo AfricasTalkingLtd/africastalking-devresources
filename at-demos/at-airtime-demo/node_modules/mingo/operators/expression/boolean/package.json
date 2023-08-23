@@ -1,0 +1,8 @@
+{
+  "main": "../../../lib/operators/expression/boolean/index.js",
+  "module": "../../../es/operators/expression/boolean/index.js",
+  "es2015": "../../../es/operators/expression/boolean/index.js",
+  "jsnext:main": "../../../es/operators/expression/boolean/index.js",
+  "types": "../../../types/operators/expression/boolean/index.d.ts",
+  "sideEffects": false
+}

@@ -1,0 +1,8 @@
+{
+  "main": "../../../../lib/operators/expression/trignometry/tan.js",
+  "module": "../../../../es/operators/expression/trignometry/tan.js",
+  "es2015": "../../../../es/operators/expression/trignometry/tan.js",
+  "jsnext:main": "../../../../es/operators/expression/trignometry/tan.js",
+  "types": "../../../../types/operators/expression/trignometry/tan.d.ts",
+  "sideEffects": false
+}

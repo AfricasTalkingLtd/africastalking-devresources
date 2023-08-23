@@ -1,0 +1,8 @@
+{
+  "main": "../../../lib/operators/window/integral.js",
+  "module": "../../../es/operators/window/integral.js",
+  "es2015": "../../../es/operators/window/integral.js",
+  "jsnext:main": "../../../es/operators/window/integral.js",
+  "types": "../../../types/operators/window/integral.d.ts",
+  "sideEffects": false
+}

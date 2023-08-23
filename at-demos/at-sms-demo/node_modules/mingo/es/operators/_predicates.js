@@ -1,0 +1,302 @@
+/**
+ * Predicates used for Query and Expression operators.
+ */
+import { computeValue, } from "../core";
+import { Query } from "../query";
+import { ensureArray, flatten, getType, inArray, intersection, isArray, isBoolean, isDate, isEmpty, isEqual, isNil, isNumber, isObject, isOperator, isRegExp, isString, MAX_INT, MAX_LONG, MIN_INT, MIN_LONG, resolve, } from "../util";
+/**
+ * Returns a query operator created from the predicate
+ *
+ * @param predicate Predicate function
+ */
+export function createQueryOperator(predicate) {
+    return (selector, value, options) => {
+        const opts = { unwrapArray: true };
+        const depth = Math.max(1, selector.split(".").length - 1);
+        return (obj) => {
+            // value of field must be fully resolved.
+            const lhs = resolve(obj, selector, opts);
+            return predicate(lhs, value, { ...options, depth });
+        };
+    };
+}
+/**
+ * Returns an expression operator created from the predicate
+ *
+ * @param predicate Predicate function
+ */
+export function createExpressionOperator(predicate) {
+    return (obj, expr, options) => {
+        const args = computeValue(obj, expr, null, options);
+        return predicate(...args);
+    };
+}
+/**
+ * Checks that two values are equal.
+ *
+ * @param a         The lhs operand as resolved from the object by the given selector
+ * @param b         The rhs operand provided by the user
+ * @returns {*}
+ */
+export function $eq(a, b, options) {
+    // start with simple equality check
+    if (isEqual(a, b))
+        return true;
+    // https://docs.mongodb.com/manual/tutorial/query-for-null-fields/
+    if (isNil(a) && isNil(b))
+        return true;
+    // check
+    if (a instanceof Array) {
+        const eq = isEqual.bind(null, b);
+        return a.some(eq) || flatten(a, options?.depth).some(eq);
+    }
+    return false;
+}
+/**
+ * Matches all values that are not equal to the value specified in the query.
+ *
+ * @param a
+ * @param b
+ * @returns {boolean}
+ */
+export function $ne(a, b, options) {
+    return !$eq(a, b, options);
+}
+/**
+ * Matches any of the values that exist in an array specified in the query.
+ *
+ * @param a
+ * @param b
+ * @returns {*}
+ */
+export function $in(a, b, options) {
+    // queries for null should be able to find undefined fields
+    if (isNil(a))
+        return b.some((v) => v === null);
+    return intersection([ensureArray(a), b], options?.hashFunction).length > 0;
+}
+/**
+ * Matches values that do not exist in an array specified to the query.
+ *
+ * @param a
+ * @param b
+ * @returns {*|boolean}
+ */
+export function $nin(a, b, options) {
+    return !$in(a, b, options);
+}
+/**
+ * Matches values that are less than the value specified in the query.
+ *
+ * @param a
+ * @param b
+ * @returns {boolean}
+ */
+export function $lt(a, b, options) {
+    return compare(a, b, (x, y) => x < y);
+}
+/**
+ * Matches values that are less than or equal to the value specified in the query.
+ *
+ * @param a
+ * @param b
+ * @returns {boolean}
+ */
+export function $lte(a, b, options) {
+    return compare(a, b, (x, y) => x <= y);
+}
+/**
+ * Matches values that are greater than the value specified in the query.
+ *
+ * @param a
+ * @param b
+ * @returns {boolean}
+ */
+export function $gt(a, b, options) {
+    return compare(a, b, (x, y) => x > y);
+}
+/**
+ * Matches values that are greater than or equal to the value specified in the query.
+ *
+ * @param a
+ * @param b
+ * @returns {boolean}
+ */
+export function $gte(a, b, options) {
+    return compare(a, b, (x, y) => x >= y);
+}
+/**
+ * Performs a modulo operation on the value of a field and selects documents with a specified result.
+ *
+ * @param a
+ * @param b
+ * @returns {boolean}
+ */
+export function $mod(a, b, options) {
+    return ensureArray(a).some((x) => b.length === 2 && x % b[0] === b[1]);
+}
+/**
+ * Selects documents where values match a specified regular expression.
+ *
+ * @param a
+ * @param b
+ * @returns {boolean}
+ */
+export function $regex(a, b, options) {
+    const lhs = ensureArray(a);
+    const match = (x) => isString(x) && !!b.exec(x);
+    return lhs.some(match) || flatten(lhs, 1).some(match);
+}
+/**
+ * Matches documents that have the specified field.
+ *
+ * @param a
+ * @param b
+ * @returns {boolean}
+ */
+export function $exists(a, b, options) {
+    return (((b === false || b === 0) && a === undefined) ||
+        ((b === true || b === 1) && a !== undefined));
+}
+/**
+ * Matches arrays that contain all elements specified in the query.
+ *
+ * @param values
+ * @param queries
+ * @returns boolean
+ */
+export function $all(values, queries, options) {
+    if (!isArray(values) ||
+        !isArray(queries) ||
+        !values.length ||
+        !queries.length) {
+        return false;
+    }
+    let matched = true;
+    for (const query of queries) {
+        // no need to check all the queries.
+        if (!matched)
+            break;
+        if (isObject(query) && inArray(Object.keys(query), "$elemMatch")) {
+            matched = $elemMatch(values, query["$elemMatch"], options);
+        }
+        else if (query instanceof RegExp) {
+            matched = values.some((s) => typeof s === "string" && query.test(s));
+        }
+        else {
+            matched = values.some((v) => isEqual(query, v));
+        }
+    }
+    return matched;
+}
+/**
+ * Selects documents if the array field is a specified size.
+ *
+ * @param a
+ * @param b
+ * @returns {*|boolean}
+ */
+export function $size(a, b, options) {
+    return a.length === b;
+}
+function isNonBooleanOperator(name) {
+    return isOperator(name) && ["$and", "$or", "$nor"].indexOf(name) === -1;
+}
+/**
+ * Selects documents if element in the array field matches all the specified $elemMatch condition.
+ *
+ * @param a {Array} element to match against
+ * @param b {Object} subquery
+ */
+export function $elemMatch(a, b, options) {
+    // should return false for non-matching input
+    if (isArray(a) && !isEmpty(a)) {
+        let format = (x) => x;
+        let criteria = b;
+        // If we find a boolean operator in the subquery, we fake a field to point to it. This is an
+        // attempt to ensure that it is a valid criteria. We cannot make this substitution for operators
+        // like $and/$or/$nor; as otherwise, this faking will break our query.
+        if (Object.keys(b).every(isNonBooleanOperator)) {
+            criteria = { temp: b };
+            format = (x) => ({ temp: x });
+        }
+        const query = new Query(criteria, options);
+        for (let i = 0, len = a.length; i < len; i++) {
+            if (query.test(format(a[i]))) {
+                return true;
+            }
+        }
+    }
+    return false;
+}
+// helper functions
+const isNull = (a) => a === null;
+const isInt = (a) => isNumber(a) &&
+    a >= MIN_INT &&
+    a <= MAX_INT &&
+    a.toString().indexOf(".") === -1;
+const isLong = (a) => isNumber(a) &&
+    a >= MIN_LONG &&
+    a <= MAX_LONG &&
+    a.toString().indexOf(".") === -1;
+/** Mapping of type to predicate */
+const compareFuncs = {
+    array: isArray,
+    bool: isBoolean,
+    boolean: isBoolean,
+    date: isDate,
+    decimal: isNumber,
+    double: isNumber,
+    int: isInt,
+    long: isLong,
+    number: isNumber,
+    null: isNull,
+    object: isObject,
+    regex: isRegExp,
+    regexp: isRegExp,
+    string: isString,
+    // added for completeness
+    undefined: isNil,
+    function: (_) => {
+        throw new Error("unsupported type key `function`.");
+    },
+    // Mongo identifiers
+    1: isNumber,
+    2: isString,
+    3: isObject,
+    4: isArray,
+    6: isNil,
+    8: isBoolean,
+    9: isDate,
+    10: isNull,
+    11: isRegExp,
+    16: isInt,
+    18: isLong,
+    19: isNumber, //decimal
+};
+/**
+ * Selects documents if a field is of the specified type.
+ *
+ * @param a
+ * @param b
+ * @returns {boolean}
+ */
+function compareType(a, b, _) {
+    const f = compareFuncs[b];
+    return f ? f(a) : false;
+}
+/**
+ * Selects documents if a field is of the specified type.
+ *
+ * @param a
+ * @param b
+ * @returns {boolean}
+ */
+export function $type(a, b, options) {
+    return Array.isArray(b)
+        ? b.findIndex((t) => compareType(a, t, options)) >= 0
+        : compareType(a, b, options);
+}
+function compare(a, b, f) {
+    return ensureArray(a).some((x) => getType(x) === getType(b) && f(x, b));
+}

@@ -1,0 +1,8 @@
+{
+  "main": "../../../../lib/operators/expression/date/minute.js",
+  "module": "../../../../es/operators/expression/date/minute.js",
+  "es2015": "../../../../es/operators/expression/date/minute.js",
+  "jsnext:main": "../../../../es/operators/expression/date/minute.js",
+  "types": "../../../../types/operators/expression/date/minute.d.ts",
+  "sideEffects": false
+}

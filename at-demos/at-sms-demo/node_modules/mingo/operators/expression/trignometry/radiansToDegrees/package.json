@@ -1,0 +1,8 @@
+{
+  "main": "../../../../lib/operators/expression/trignometry/radiansToDegrees.js",
+  "module": "../../../../es/operators/expression/trignometry/radiansToDegrees.js",
+  "es2015": "../../../../es/operators/expression/trignometry/radiansToDegrees.js",
+  "jsnext:main": "../../../../es/operators/expression/trignometry/radiansToDegrees.js",
+  "types": "../../../../types/operators/expression/trignometry/radiansToDegrees.d.ts",
+  "sideEffects": false
+}

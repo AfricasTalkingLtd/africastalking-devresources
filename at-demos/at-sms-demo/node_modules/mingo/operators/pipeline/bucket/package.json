@@ -1,0 +1,8 @@
+{
+  "main": "../../../lib/operators/pipeline/bucket.js",
+  "module": "../../../es/operators/pipeline/bucket.js",
+  "es2015": "../../../es/operators/pipeline/bucket.js",
+  "jsnext:main": "../../../es/operators/pipeline/bucket.js",
+  "types": "../../../types/operators/pipeline/bucket.d.ts",
+  "sideEffects": false
+}

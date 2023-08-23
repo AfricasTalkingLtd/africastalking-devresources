@@ -1,0 +1,8 @@
+{
+  "main": "../../../../lib/operators/expression/arithmetic/round.js",
+  "module": "../../../../es/operators/expression/arithmetic/round.js",
+  "es2015": "../../../../es/operators/expression/arithmetic/round.js",
+  "jsnext:main": "../../../../es/operators/expression/arithmetic/round.js",
+  "types": "../../../../types/operators/expression/arithmetic/round.d.ts",
+  "sideEffects": false
+}

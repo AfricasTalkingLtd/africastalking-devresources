@@ -1,0 +1,8 @@
+{
+  "main": "../../../../lib/operators/expression/arithmetic/sqrt.js",
+  "module": "../../../../es/operators/expression/arithmetic/sqrt.js",
+  "es2015": "../../../../es/operators/expression/arithmetic/sqrt.js",
+  "jsnext:main": "../../../../es/operators/expression/arithmetic/sqrt.js",
+  "types": "../../../../types/operators/expression/arithmetic/sqrt.d.ts",
+  "sideEffects": false
+}

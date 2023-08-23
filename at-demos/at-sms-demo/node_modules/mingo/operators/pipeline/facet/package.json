@@ -1,0 +1,8 @@
+{
+  "main": "../../../lib/operators/pipeline/facet.js",
+  "module": "../../../es/operators/pipeline/facet.js",
+  "es2015": "../../../es/operators/pipeline/facet.js",
+  "jsnext:main": "../../../es/operators/pipeline/facet.js",
+  "types": "../../../types/operators/pipeline/facet.d.ts",
+  "sideEffects": false
+}

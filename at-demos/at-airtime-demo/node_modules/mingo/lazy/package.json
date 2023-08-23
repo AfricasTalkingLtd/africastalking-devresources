@@ -1,0 +1,8 @@
+{
+  "main": "../lib/lazy.js",
+  "module": "../es/lazy.js",
+  "es2015": "../es/lazy.js",
+  "jsnext:main": "../es/lazy.js",
+  "types": "../types/lazy.d.ts",
+  "sideEffects": false
+}

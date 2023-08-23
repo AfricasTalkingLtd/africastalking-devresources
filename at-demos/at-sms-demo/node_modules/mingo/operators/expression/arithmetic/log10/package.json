@@ -1,0 +1,8 @@
+{
+  "main": "../../../../lib/operators/expression/arithmetic/log10.js",
+  "module": "../../../../es/operators/expression/arithmetic/log10.js",
+  "es2015": "../../../../es/operators/expression/arithmetic/log10.js",
+  "jsnext:main": "../../../../es/operators/expression/arithmetic/log10.js",
+  "types": "../../../../types/operators/expression/arithmetic/log10.d.ts",
+  "sideEffects": false
+}

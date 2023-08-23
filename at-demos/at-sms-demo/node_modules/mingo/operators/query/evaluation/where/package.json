@@ -1,0 +1,8 @@
+{
+  "main": "../../../../lib/operators/query/evaluation/where.js",
+  "module": "../../../../es/operators/query/evaluation/where.js",
+  "es2015": "../../../../es/operators/query/evaluation/where.js",
+  "jsnext:main": "../../../../es/operators/query/evaluation/where.js",
+  "types": "../../../../types/operators/query/evaluation/where.d.ts",
+  "sideEffects": false
+}

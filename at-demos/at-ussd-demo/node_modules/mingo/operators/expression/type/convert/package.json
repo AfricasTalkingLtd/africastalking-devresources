@@ -1,0 +1,8 @@
+{
+  "main": "../../../../lib/operators/expression/type/convert.js",
+  "module": "../../../../es/operators/expression/type/convert.js",
+  "es2015": "../../../../es/operators/expression/type/convert.js",
+  "jsnext:main": "../../../../es/operators/expression/type/convert.js",
+  "types": "../../../../types/operators/expression/type/convert.d.ts",
+  "sideEffects": false
+}

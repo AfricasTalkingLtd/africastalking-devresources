@@ -1,0 +1,8 @@
+{
+  "main": "../../../../lib/operators/query/array/size.js",
+  "module": "../../../../es/operators/query/array/size.js",
+  "es2015": "../../../../es/operators/query/array/size.js",
+  "jsnext:main": "../../../../es/operators/query/array/size.js",
+  "types": "../../../../types/operators/query/array/size.d.ts",
+  "sideEffects": false
+}

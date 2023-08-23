@@ -1,0 +1,8 @@
+{
+  "main": "../../../../lib/operators/expression/string/replaceOne.js",
+  "module": "../../../../es/operators/expression/string/replaceOne.js",
+  "es2015": "../../../../es/operators/expression/string/replaceOne.js",
+  "jsnext:main": "../../../../es/operators/expression/string/replaceOne.js",
+  "types": "../../../../types/operators/expression/string/replaceOne.d.ts",
+  "sideEffects": false
+}

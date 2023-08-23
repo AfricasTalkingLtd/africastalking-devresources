@@ -1,0 +1,8 @@
+{
+  "main": "../../../lib/operators/accumulator/avg.js",
+  "module": "../../../es/operators/accumulator/avg.js",
+  "es2015": "../../../es/operators/accumulator/avg.js",
+  "jsnext:main": "../../../es/operators/accumulator/avg.js",
+  "types": "../../../types/operators/accumulator/avg.d.ts",
+  "sideEffects": false
+}

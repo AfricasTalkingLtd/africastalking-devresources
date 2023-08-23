@@ -1,0 +1,8 @@
+{
+  "main": "../../../../lib/operators/expression/string/substrCP.js",
+  "module": "../../../../es/operators/expression/string/substrCP.js",
+  "es2015": "../../../../es/operators/expression/string/substrCP.js",
+  "jsnext:main": "../../../../es/operators/expression/string/substrCP.js",
+  "types": "../../../../types/operators/expression/string/substrCP.d.ts",
+  "sideEffects": false
+}

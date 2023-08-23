@@ -1,0 +1,8 @@
+{
+  "main": "../../../../lib/operators/expression/type/isNumber.js",
+  "module": "../../../../es/operators/expression/type/isNumber.js",
+  "es2015": "../../../../es/operators/expression/type/isNumber.js",
+  "jsnext:main": "../../../../es/operators/expression/type/isNumber.js",
+  "types": "../../../../types/operators/expression/type/isNumber.d.ts",
+  "sideEffects": false
+}

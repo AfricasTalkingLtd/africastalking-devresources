@@ -1,0 +1,8 @@
+{
+  "main": "../../../../lib/operators/expression/type/toDouble.js",
+  "module": "../../../../es/operators/expression/type/toDouble.js",
+  "es2015": "../../../../es/operators/expression/type/toDouble.js",
+  "jsnext:main": "../../../../es/operators/expression/type/toDouble.js",
+  "types": "../../../../types/operators/expression/type/toDouble.d.ts",
+  "sideEffects": false
+}

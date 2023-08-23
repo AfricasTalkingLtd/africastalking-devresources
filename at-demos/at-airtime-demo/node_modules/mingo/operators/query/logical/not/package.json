@@ -1,0 +1,8 @@
+{
+  "main": "../../../../lib/operators/query/logical/not.js",
+  "module": "../../../../es/operators/query/logical/not.js",
+  "es2015": "../../../../es/operators/query/logical/not.js",
+  "jsnext:main": "../../../../es/operators/query/logical/not.js",
+  "types": "../../../../types/operators/query/logical/not.d.ts",
+  "sideEffects": false
+}

@@ -1,0 +1,8 @@
+{
+  "main": "../../../../lib/operators/expression/string/rtrim.js",
+  "module": "../../../../es/operators/expression/string/rtrim.js",
+  "es2015": "../../../../es/operators/expression/string/rtrim.js",
+  "jsnext:main": "../../../../es/operators/expression/string/rtrim.js",
+  "types": "../../../../types/operators/expression/string/rtrim.d.ts",
+  "sideEffects": false
+}

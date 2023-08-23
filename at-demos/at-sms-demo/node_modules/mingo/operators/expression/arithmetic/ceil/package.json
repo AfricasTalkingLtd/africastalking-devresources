@@ -1,0 +1,8 @@
+{
+  "main": "../../../../lib/operators/expression/arithmetic/ceil.js",
+  "module": "../../../../es/operators/expression/arithmetic/ceil.js",
+  "es2015": "../../../../es/operators/expression/arithmetic/ceil.js",
+  "jsnext:main": "../../../../es/operators/expression/arithmetic/ceil.js",
+  "types": "../../../../types/operators/expression/arithmetic/ceil.d.ts",
+  "sideEffects": false
+}

@@ -1,0 +1,8 @@
+{
+  "main": "../../../lib/operators/pipeline/bucketAuto.js",
+  "module": "../../../es/operators/pipeline/bucketAuto.js",
+  "es2015": "../../../es/operators/pipeline/bucketAuto.js",
+  "jsnext:main": "../../../es/operators/pipeline/bucketAuto.js",
+  "types": "../../../types/operators/pipeline/bucketAuto.d.ts",
+  "sideEffects": false
+}

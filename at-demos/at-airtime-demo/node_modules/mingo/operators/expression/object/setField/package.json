@@ -1,0 +1,8 @@
+{
+  "main": "../../../../lib/operators/expression/object/setField.js",
+  "module": "../../../../es/operators/expression/object/setField.js",
+  "es2015": "../../../../es/operators/expression/object/setField.js",
+  "jsnext:main": "../../../../es/operators/expression/object/setField.js",
+  "types": "../../../../types/operators/expression/object/setField.d.ts",
+  "sideEffects": false
+}

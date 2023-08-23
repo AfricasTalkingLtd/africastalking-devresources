@@ -1,0 +1,8 @@
+{
+  "main": "../lib/aggregator.js",
+  "module": "../es/aggregator.js",
+  "es2015": "../es/aggregator.js",
+  "jsnext:main": "../es/aggregator.js",
+  "types": "../types/aggregator.d.ts",
+  "sideEffects": false
+}

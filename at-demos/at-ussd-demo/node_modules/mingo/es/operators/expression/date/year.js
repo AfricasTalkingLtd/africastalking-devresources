@@ -1,0 +1,10 @@
+// Date Expression Operators: https://docs.mongodb.com/manual/reference/operator/aggregation/#date-expression-operators
+import { computeDate } from "./_internal";
+/**
+ * Returns the year for a date as a number (e.g. 2014).
+ * @param obj
+ * @param expr
+ */
+export function $year(obj, expr, options) {
+    return computeDate(obj, expr, options).getUTCFullYear();
+}

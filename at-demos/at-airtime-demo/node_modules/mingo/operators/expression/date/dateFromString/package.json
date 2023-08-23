@@ -1,0 +1,8 @@
+{
+  "main": "../../../../lib/operators/expression/date/dateFromString.js",
+  "module": "../../../../es/operators/expression/date/dateFromString.js",
+  "es2015": "../../../../es/operators/expression/date/dateFromString.js",
+  "jsnext:main": "../../../../es/operators/expression/date/dateFromString.js",
+  "types": "../../../../types/operators/expression/date/dateFromString.d.ts",
+  "sideEffects": false
+}

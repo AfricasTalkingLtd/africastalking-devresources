@@ -1,0 +1,8 @@
+{
+  "main": "../../lib/operators/projection/index.js",
+  "module": "../../es/operators/projection/index.js",
+  "es2015": "../../es/operators/projection/index.js",
+  "jsnext:main": "../../es/operators/projection/index.js",
+  "types": "../../types/operators/projection/index.d.ts",
+  "sideEffects": false
+}

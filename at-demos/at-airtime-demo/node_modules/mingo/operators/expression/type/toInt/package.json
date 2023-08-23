@@ -1,0 +1,8 @@
+{
+  "main": "../../../../lib/operators/expression/type/toInt.js",
+  "module": "../../../../es/operators/expression/type/toInt.js",
+  "es2015": "../../../../es/operators/expression/type/toInt.js",
+  "jsnext:main": "../../../../es/operators/expression/type/toInt.js",
+  "types": "../../../../types/operators/expression/type/toInt.d.ts",
+  "sideEffects": false
+}

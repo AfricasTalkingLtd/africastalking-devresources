@@ -1,0 +1,8 @@
+{
+  "main": "../../../../lib/operators/query/element/exists.js",
+  "module": "../../../../es/operators/query/element/exists.js",
+  "es2015": "../../../../es/operators/query/element/exists.js",
+  "jsnext:main": "../../../../es/operators/query/element/exists.js",
+  "types": "../../../../types/operators/query/element/exists.d.ts",
+  "sideEffects": false
+}

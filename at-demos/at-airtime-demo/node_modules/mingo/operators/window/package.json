@@ -1,0 +1,8 @@
+{
+  "main": "../../lib/operators/window/index.js",
+  "module": "../../es/operators/window/index.js",
+  "es2015": "../../es/operators/window/index.js",
+  "jsnext:main": "../../es/operators/window/index.js",
+  "types": "../../types/operators/window/index.d.ts",
+  "sideEffects": false
+}

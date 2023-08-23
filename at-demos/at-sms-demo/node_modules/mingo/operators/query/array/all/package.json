@@ -1,0 +1,8 @@
+{
+  "main": "../../../../lib/operators/query/array/all.js",
+  "module": "../../../../es/operators/query/array/all.js",
+  "es2015": "../../../../es/operators/query/array/all.js",
+  "jsnext:main": "../../../../es/operators/query/array/all.js",
+  "types": "../../../../types/operators/query/array/all.d.ts",
+  "sideEffects": false
+}

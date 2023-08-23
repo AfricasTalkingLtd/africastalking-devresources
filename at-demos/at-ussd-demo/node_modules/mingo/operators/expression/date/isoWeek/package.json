@@ -1,0 +1,8 @@
+{
+  "main": "../../../../lib/operators/expression/date/isoWeek.js",
+  "module": "../../../../es/operators/expression/date/isoWeek.js",
+  "es2015": "../../../../es/operators/expression/date/isoWeek.js",
+  "jsnext:main": "../../../../es/operators/expression/date/isoWeek.js",
+  "types": "../../../../types/operators/expression/date/isoWeek.d.ts",
+  "sideEffects": false
+}

@@ -1,0 +1,8 @@
+{
+  "main": "../../../../lib/operators/query/comparison/in.js",
+  "module": "../../../../es/operators/query/comparison/in.js",
+  "es2015": "../../../../es/operators/query/comparison/in.js",
+  "jsnext:main": "../../../../es/operators/query/comparison/in.js",
+  "types": "../../../../types/operators/query/comparison/in.d.ts",
+  "sideEffects": false
+}

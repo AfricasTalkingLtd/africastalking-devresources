@@ -1,0 +1,8 @@
+{
+  "main": "../../../../lib/operators/query/comparison/nin.js",
+  "module": "../../../../es/operators/query/comparison/nin.js",
+  "es2015": "../../../../es/operators/query/comparison/nin.js",
+  "jsnext:main": "../../../../es/operators/query/comparison/nin.js",
+  "types": "../../../../types/operators/query/comparison/nin.d.ts",
+  "sideEffects": false
+}

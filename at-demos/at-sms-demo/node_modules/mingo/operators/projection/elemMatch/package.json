@@ -1,0 +1,8 @@
+{
+  "main": "../../../lib/operators/projection/elemMatch.js",
+  "module": "../../../es/operators/projection/elemMatch.js",
+  "es2015": "../../../es/operators/projection/elemMatch.js",
+  "jsnext:main": "../../../es/operators/projection/elemMatch.js",
+  "types": "../../../types/operators/projection/elemMatch.d.ts",
+  "sideEffects": false
+}

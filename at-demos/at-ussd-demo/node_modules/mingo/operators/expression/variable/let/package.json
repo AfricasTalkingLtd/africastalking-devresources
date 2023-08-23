@@ -1,0 +1,8 @@
+{
+  "main": "../../../../lib/operators/expression/variable/let.js",
+  "module": "../../../../es/operators/expression/variable/let.js",
+  "es2015": "../../../../es/operators/expression/variable/let.js",
+  "jsnext:main": "../../../../es/operators/expression/variable/let.js",
+  "types": "../../../../types/operators/expression/variable/let.d.ts",
+  "sideEffects": false
+}

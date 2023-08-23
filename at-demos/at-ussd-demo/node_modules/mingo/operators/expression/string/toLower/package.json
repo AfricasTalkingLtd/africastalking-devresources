@@ -1,0 +1,8 @@
+{
+  "main": "../../../../lib/operators/expression/string/toLower.js",
+  "module": "../../../../es/operators/expression/string/toLower.js",
+  "es2015": "../../../../es/operators/expression/string/toLower.js",
+  "jsnext:main": "../../../../es/operators/expression/string/toLower.js",
+  "types": "../../../../types/operators/expression/string/toLower.d.ts",
+  "sideEffects": false
+}

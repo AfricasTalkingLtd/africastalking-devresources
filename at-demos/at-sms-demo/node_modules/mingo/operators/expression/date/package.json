@@ -1,0 +1,8 @@
+{
+  "main": "../../../lib/operators/expression/date/index.js",
+  "module": "../../../es/operators/expression/date/index.js",
+  "es2015": "../../../es/operators/expression/date/index.js",
+  "jsnext:main": "../../../es/operators/expression/date/index.js",
+  "types": "../../../types/operators/expression/date/index.d.ts",
+  "sideEffects": false
+}

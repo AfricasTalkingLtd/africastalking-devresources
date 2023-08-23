@@ -1,0 +1,8 @@
+{
+  "main": "../../../../lib/operators/expression/custom/function.js",
+  "module": "../../../../es/operators/expression/custom/function.js",
+  "es2015": "../../../../es/operators/expression/custom/function.js",
+  "jsnext:main": "../../../../es/operators/expression/custom/function.js",
+  "types": "../../../../types/operators/expression/custom/function.d.ts",
+  "sideEffects": false
+}

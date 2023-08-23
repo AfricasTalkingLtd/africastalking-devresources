@@ -1,0 +1,8 @@
+{
+  "main": "../../../../lib/operators/expression/date/second.js",
+  "module": "../../../../es/operators/expression/date/second.js",
+  "es2015": "../../../../es/operators/expression/date/second.js",
+  "jsnext:main": "../../../../es/operators/expression/date/second.js",
+  "types": "../../../../types/operators/expression/date/second.d.ts",
+  "sideEffects": false
+}

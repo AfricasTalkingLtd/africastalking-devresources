@@ -1,0 +1,8 @@
+{
+  "main": "../../../../lib/operators/query/evaluation/mod.js",
+  "module": "../../../../es/operators/query/evaluation/mod.js",
+  "es2015": "../../../../es/operators/query/evaluation/mod.js",
+  "jsnext:main": "../../../../es/operators/query/evaluation/mod.js",
+  "types": "../../../../types/operators/query/evaluation/mod.d.ts",
+  "sideEffects": false
+}

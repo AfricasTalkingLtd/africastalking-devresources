@@ -1,0 +1,8 @@
+{
+  "main": "../../../../lib/operators/expression/date/year.js",
+  "module": "../../../../es/operators/expression/date/year.js",
+  "es2015": "../../../../es/operators/expression/date/year.js",
+  "jsnext:main": "../../../../es/operators/expression/date/year.js",
+  "types": "../../../../types/operators/expression/date/year.d.ts",
+  "sideEffects": false
+}

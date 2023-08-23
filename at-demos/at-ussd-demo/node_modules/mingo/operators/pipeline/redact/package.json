@@ -1,0 +1,8 @@
+{
+  "main": "../../../lib/operators/pipeline/redact.js",
+  "module": "../../../es/operators/pipeline/redact.js",
+  "es2015": "../../../es/operators/pipeline/redact.js",
+  "jsnext:main": "../../../es/operators/pipeline/redact.js",
+  "types": "../../../types/operators/pipeline/redact.d.ts",
+  "sideEffects": false
+}

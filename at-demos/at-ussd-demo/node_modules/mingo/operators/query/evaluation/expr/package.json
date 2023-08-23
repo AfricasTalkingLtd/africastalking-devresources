@@ -1,0 +1,8 @@
+{
+  "main": "../../../../lib/operators/query/evaluation/expr.js",
+  "module": "../../../../es/operators/query/evaluation/expr.js",
+  "es2015": "../../../../es/operators/query/evaluation/expr.js",
+  "jsnext:main": "../../../../es/operators/query/evaluation/expr.js",
+  "types": "../../../../types/operators/query/evaluation/expr.d.ts",
+  "sideEffects": false
+}

@@ -1,0 +1,8 @@
+{
+  "main": "../../../../lib/operators/expression/type/toDate.js",
+  "module": "../../../../es/operators/expression/type/toDate.js",
+  "es2015": "../../../../es/operators/expression/type/toDate.js",
+  "jsnext:main": "../../../../es/operators/expression/type/toDate.js",
+  "types": "../../../../types/operators/expression/type/toDate.d.ts",
+  "sideEffects": false
+}

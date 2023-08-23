@@ -1,0 +1,8 @@
+{
+  "main": "../../../../lib/operators/expression/string/toUpper.js",
+  "module": "../../../../es/operators/expression/string/toUpper.js",
+  "es2015": "../../../../es/operators/expression/string/toUpper.js",
+  "jsnext:main": "../../../../es/operators/expression/string/toUpper.js",
+  "types": "../../../../types/operators/expression/string/toUpper.d.ts",
+  "sideEffects": false
+}

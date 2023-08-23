@@ -1,0 +1,8 @@
+{
+  "main": "../../../../lib/operators/expression/type/type.js",
+  "module": "../../../../es/operators/expression/type/type.js",
+  "es2015": "../../../../es/operators/expression/type/type.js",
+  "jsnext:main": "../../../../es/operators/expression/type/type.js",
+  "types": "../../../../types/operators/expression/type/type.d.ts",
+  "sideEffects": false
+}

@@ -1,0 +1,8 @@
+{
+  "main": "../../../../lib/operators/expression/trignometry/asinh.js",
+  "module": "../../../../es/operators/expression/trignometry/asinh.js",
+  "es2015": "../../../../es/operators/expression/trignometry/asinh.js",
+  "jsnext:main": "../../../../es/operators/expression/trignometry/asinh.js",
+  "types": "../../../../types/operators/expression/trignometry/asinh.d.ts",
+  "sideEffects": false
+}

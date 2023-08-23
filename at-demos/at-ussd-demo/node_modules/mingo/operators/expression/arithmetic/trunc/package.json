@@ -1,0 +1,8 @@
+{
+  "main": "../../../../lib/operators/expression/arithmetic/trunc.js",
+  "module": "../../../../es/operators/expression/arithmetic/trunc.js",
+  "es2015": "../../../../es/operators/expression/arithmetic/trunc.js",
+  "jsnext:main": "../../../../es/operators/expression/arithmetic/trunc.js",
+  "types": "../../../../types/operators/expression/arithmetic/trunc.d.ts",
+  "sideEffects": false
+}

@@ -1,0 +1,8 @@
+{
+  "main": "../../../../lib/operators/expression/misc/rand.js",
+  "module": "../../../../es/operators/expression/misc/rand.js",
+  "es2015": "../../../../es/operators/expression/misc/rand.js",
+  "jsnext:main": "../../../../es/operators/expression/misc/rand.js",
+  "types": "../../../../types/operators/expression/misc/rand.d.ts",
+  "sideEffects": false
+}

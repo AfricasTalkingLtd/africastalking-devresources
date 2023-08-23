@@ -1,0 +1,8 @@
+{
+  "main": "../../../lib/operators/pipeline/sample.js",
+  "module": "../../../es/operators/pipeline/sample.js",
+  "es2015": "../../../es/operators/pipeline/sample.js",
+  "jsnext:main": "../../../es/operators/pipeline/sample.js",
+  "types": "../../../types/operators/pipeline/sample.d.ts",
+  "sideEffects": false
+}

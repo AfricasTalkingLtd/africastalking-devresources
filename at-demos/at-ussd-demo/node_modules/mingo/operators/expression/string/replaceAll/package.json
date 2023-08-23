@@ -1,0 +1,8 @@
+{
+  "main": "../../../../lib/operators/expression/string/replaceAll.js",
+  "module": "../../../../es/operators/expression/string/replaceAll.js",
+  "es2015": "../../../../es/operators/expression/string/replaceAll.js",
+  "jsnext:main": "../../../../es/operators/expression/string/replaceAll.js",
+  "types": "../../../../types/operators/expression/string/replaceAll.d.ts",
+  "sideEffects": false
+}

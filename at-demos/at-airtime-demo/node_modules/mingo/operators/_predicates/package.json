@@ -1,0 +1,8 @@
+{
+  "main": "../../lib/operators/_predicates.js",
+  "module": "../../es/operators/_predicates.js",
+  "es2015": "../../es/operators/_predicates.js",
+  "jsnext:main": "../../es/operators/_predicates.js",
+  "types": "../../types/operators/_predicates.d.ts",
+  "sideEffects": false
+}

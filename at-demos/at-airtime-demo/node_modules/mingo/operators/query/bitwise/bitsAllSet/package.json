@@ -1,0 +1,8 @@
+{
+  "main": "../../../../lib/operators/query/bitwise/bitsAllSet.js",
+  "module": "../../../../es/operators/query/bitwise/bitsAllSet.js",
+  "es2015": "../../../../es/operators/query/bitwise/bitsAllSet.js",
+  "jsnext:main": "../../../../es/operators/query/bitwise/bitsAllSet.js",
+  "types": "../../../../types/operators/query/bitwise/bitsAllSet.d.ts",
+  "sideEffects": false
+}

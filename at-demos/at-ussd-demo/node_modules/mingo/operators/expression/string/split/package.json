@@ -1,0 +1,8 @@
+{
+  "main": "../../../../lib/operators/expression/string/split.js",
+  "module": "../../../../es/operators/expression/string/split.js",
+  "es2015": "../../../../es/operators/expression/string/split.js",
+  "jsnext:main": "../../../../es/operators/expression/string/split.js",
+  "types": "../../../../types/operators/expression/string/split.d.ts",
+  "sideEffects": false
+}

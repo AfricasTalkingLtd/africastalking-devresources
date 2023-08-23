@@ -1,0 +1,8 @@
+{
+  "main": "../../../../lib/operators/expression/object/mergeObjects.js",
+  "module": "../../../../es/operators/expression/object/mergeObjects.js",
+  "es2015": "../../../../es/operators/expression/object/mergeObjects.js",
+  "jsnext:main": "../../../../es/operators/expression/object/mergeObjects.js",
+  "types": "../../../../types/operators/expression/object/mergeObjects.d.ts",
+  "sideEffects": false
+}

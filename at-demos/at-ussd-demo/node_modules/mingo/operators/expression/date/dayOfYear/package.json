@@ -1,0 +1,8 @@
+{
+  "main": "../../../../lib/operators/expression/date/dayOfYear.js",
+  "module": "../../../../es/operators/expression/date/dayOfYear.js",
+  "es2015": "../../../../es/operators/expression/date/dayOfYear.js",
+  "jsnext:main": "../../../../es/operators/expression/date/dayOfYear.js",
+  "types": "../../../../types/operators/expression/date/dayOfYear.d.ts",
+  "sideEffects": false
+}

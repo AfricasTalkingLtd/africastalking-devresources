@@ -1,0 +1,8 @@
+{
+  "main": "../../../../lib/operators/expression/date/dayOfWeek.js",
+  "module": "../../../../es/operators/expression/date/dayOfWeek.js",
+  "es2015": "../../../../es/operators/expression/date/dayOfWeek.js",
+  "jsnext:main": "../../../../es/operators/expression/date/dayOfWeek.js",
+  "types": "../../../../types/operators/expression/date/dayOfWeek.d.ts",
+  "sideEffects": false
+}

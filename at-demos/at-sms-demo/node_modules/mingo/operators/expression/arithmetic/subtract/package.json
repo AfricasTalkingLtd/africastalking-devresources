@@ -1,0 +1,8 @@
+{
+  "main": "../../../../lib/operators/expression/arithmetic/subtract.js",
+  "module": "../../../../es/operators/expression/arithmetic/subtract.js",
+  "es2015": "../../../../es/operators/expression/arithmetic/subtract.js",
+  "jsnext:main": "../../../../es/operators/expression/arithmetic/subtract.js",
+  "types": "../../../../types/operators/expression/arithmetic/subtract.d.ts",
+  "sideEffects": false
+}

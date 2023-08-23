@@ -1,0 +1,8 @@
+{
+  "main": "../lib/types.js",
+  "module": "../es/types.js",
+  "es2015": "../es/types.js",
+  "jsnext:main": "../es/types.js",
+  "types": "types.d.ts",
+  "sideEffects": false
+}

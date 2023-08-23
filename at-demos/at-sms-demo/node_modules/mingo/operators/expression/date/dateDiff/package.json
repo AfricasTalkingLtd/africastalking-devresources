@@ -1,0 +1,8 @@
+{
+  "main": "../../../../lib/operators/expression/date/dateDiff.js",
+  "module": "../../../../es/operators/expression/date/dateDiff.js",
+  "es2015": "../../../../es/operators/expression/date/dateDiff.js",
+  "jsnext:main": "../../../../es/operators/expression/date/dateDiff.js",
+  "types": "../../../../types/operators/expression/date/dateDiff.d.ts",
+  "sideEffects": false
+}

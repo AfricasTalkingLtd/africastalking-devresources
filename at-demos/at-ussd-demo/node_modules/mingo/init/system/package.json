@@ -1,0 +1,8 @@
+{
+  "main": "../../lib/init/system.js",
+  "module": "../../es/init/system.js",
+  "es2015": "../../es/init/system.js",
+  "jsnext:main": "../../es/init/system.js",
+  "types": "../../types/init/system.d.ts",
+  "sideEffects": true
+}

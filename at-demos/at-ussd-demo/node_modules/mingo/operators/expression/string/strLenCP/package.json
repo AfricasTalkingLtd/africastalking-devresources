@@ -1,0 +1,8 @@
+{
+  "main": "../../../../lib/operators/expression/string/strLenCP.js",
+  "module": "../../../../es/operators/expression/string/strLenCP.js",
+  "es2015": "../../../../es/operators/expression/string/strLenCP.js",
+  "jsnext:main": "../../../../es/operators/expression/string/strLenCP.js",
+  "types": "../../../../types/operators/expression/string/strLenCP.d.ts",
+  "sideEffects": false
+}

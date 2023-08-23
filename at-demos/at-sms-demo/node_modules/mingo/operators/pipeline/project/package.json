@@ -1,0 +1,8 @@
+{
+  "main": "../../../lib/operators/pipeline/project.js",
+  "module": "../../../es/operators/pipeline/project.js",
+  "es2015": "../../../es/operators/pipeline/project.js",
+  "jsnext:main": "../../../es/operators/pipeline/project.js",
+  "types": "../../../types/operators/pipeline/project.d.ts",
+  "sideEffects": false
+}

@@ -1,0 +1,8 @@
+{
+  "main": "../../../../lib/operators/query/comparison/gte.js",
+  "module": "../../../../es/operators/query/comparison/gte.js",
+  "es2015": "../../../../es/operators/query/comparison/gte.js",
+  "jsnext:main": "../../../../es/operators/query/comparison/gte.js",
+  "types": "../../../../types/operators/query/comparison/gte.d.ts",
+  "sideEffects": false
+}

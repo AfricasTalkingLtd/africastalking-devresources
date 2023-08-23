@@ -1,0 +1,8 @@
+{
+  "main": "../../../../lib/operators/query/logical/or.js",
+  "module": "../../../../es/operators/query/logical/or.js",
+  "es2015": "../../../../es/operators/query/logical/or.js",
+  "jsnext:main": "../../../../es/operators/query/logical/or.js",
+  "types": "../../../../types/operators/query/logical/or.d.ts",
+  "sideEffects": false
+}

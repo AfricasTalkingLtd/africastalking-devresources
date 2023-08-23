@@ -1,0 +1,8 @@
+{
+  "main": "../../../../lib/operators/expression/type/toDecimal.js",
+  "module": "../../../../es/operators/expression/type/toDecimal.js",
+  "es2015": "../../../../es/operators/expression/type/toDecimal.js",
+  "jsnext:main": "../../../../es/operators/expression/type/toDecimal.js",
+  "types": "../../../../types/operators/expression/type/toDecimal.d.ts",
+  "sideEffects": false
+}

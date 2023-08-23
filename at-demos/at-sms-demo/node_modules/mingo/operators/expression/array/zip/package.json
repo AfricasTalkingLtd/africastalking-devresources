@@ -1,0 +1,8 @@
+{
+  "main": "../../../../lib/operators/expression/array/zip.js",
+  "module": "../../../../es/operators/expression/array/zip.js",
+  "es2015": "../../../../es/operators/expression/array/zip.js",
+  "jsnext:main": "../../../../es/operators/expression/array/zip.js",
+  "types": "../../../../types/operators/expression/array/zip.d.ts",
+  "sideEffects": false
+}

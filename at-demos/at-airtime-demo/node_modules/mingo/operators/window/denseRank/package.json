@@ -1,0 +1,8 @@
+{
+  "main": "../../../lib/operators/window/denseRank.js",
+  "module": "../../../es/operators/window/denseRank.js",
+  "es2015": "../../../es/operators/window/denseRank.js",
+  "jsnext:main": "../../../es/operators/window/denseRank.js",
+  "types": "../../../types/operators/window/denseRank.d.ts",
+  "sideEffects": false
+}

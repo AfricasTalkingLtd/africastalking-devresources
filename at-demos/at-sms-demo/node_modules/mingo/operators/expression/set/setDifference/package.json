@@ -1,0 +1,8 @@
+{
+  "main": "../../../../lib/operators/expression/set/setDifference.js",
+  "module": "../../../../es/operators/expression/set/setDifference.js",
+  "es2015": "../../../../es/operators/expression/set/setDifference.js",
+  "jsnext:main": "../../../../es/operators/expression/set/setDifference.js",
+  "types": "../../../../types/operators/expression/set/setDifference.d.ts",
+  "sideEffects": false
+}

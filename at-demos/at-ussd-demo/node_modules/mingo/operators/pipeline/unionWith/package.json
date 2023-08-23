@@ -1,0 +1,8 @@
+{
+  "main": "../../../lib/operators/pipeline/unionWith.js",
+  "module": "../../../es/operators/pipeline/unionWith.js",
+  "es2015": "../../../es/operators/pipeline/unionWith.js",
+  "jsnext:main": "../../../es/operators/pipeline/unionWith.js",
+  "types": "../../../types/operators/pipeline/unionWith.d.ts",
+  "sideEffects": false
+}

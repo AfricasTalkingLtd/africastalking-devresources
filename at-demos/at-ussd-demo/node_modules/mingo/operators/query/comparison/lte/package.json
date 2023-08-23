@@ -1,0 +1,8 @@
+{
+  "main": "../../../../lib/operators/query/comparison/lte.js",
+  "module": "../../../../es/operators/query/comparison/lte.js",
+  "es2015": "../../../../es/operators/query/comparison/lte.js",
+  "jsnext:main": "../../../../es/operators/query/comparison/lte.js",
+  "types": "../../../../types/operators/query/comparison/lte.d.ts",
+  "sideEffects": false
+}

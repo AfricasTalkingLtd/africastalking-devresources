@@ -1,0 +1,8 @@
+{
+  "main": "../../../lib/operators/expression/arithmetic/index.js",
+  "module": "../../../es/operators/expression/arithmetic/index.js",
+  "es2015": "../../../es/operators/expression/arithmetic/index.js",
+  "jsnext:main": "../../../es/operators/expression/arithmetic/index.js",
+  "types": "../../../types/operators/expression/arithmetic/index.d.ts",
+  "sideEffects": false
+}

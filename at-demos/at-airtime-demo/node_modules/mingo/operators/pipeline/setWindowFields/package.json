@@ -1,0 +1,8 @@
+{
+  "main": "../../../lib/operators/pipeline/setWindowFields.js",
+  "module": "../../../es/operators/pipeline/setWindowFields.js",
+  "es2015": "../../../es/operators/pipeline/setWindowFields.js",
+  "jsnext:main": "../../../es/operators/pipeline/setWindowFields.js",
+  "types": "../../../types/operators/pipeline/setWindowFields.d.ts",
+  "sideEffects": false
+}

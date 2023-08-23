@@ -1,0 +1,8 @@
+{
+  "main": "../../../../lib/operators/expression/boolean/not.js",
+  "module": "../../../../es/operators/expression/boolean/not.js",
+  "es2015": "../../../../es/operators/expression/boolean/not.js",
+  "jsnext:main": "../../../../es/operators/expression/boolean/not.js",
+  "types": "../../../../types/operators/expression/boolean/not.d.ts",
+  "sideEffects": false
+}

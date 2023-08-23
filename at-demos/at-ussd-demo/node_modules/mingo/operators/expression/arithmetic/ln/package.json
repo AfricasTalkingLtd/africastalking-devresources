@@ -1,0 +1,8 @@
+{
+  "main": "../../../../lib/operators/expression/arithmetic/ln.js",
+  "module": "../../../../es/operators/expression/arithmetic/ln.js",
+  "es2015": "../../../../es/operators/expression/arithmetic/ln.js",
+  "jsnext:main": "../../../../es/operators/expression/arithmetic/ln.js",
+  "types": "../../../../types/operators/expression/arithmetic/ln.d.ts",
+  "sideEffects": false
+}

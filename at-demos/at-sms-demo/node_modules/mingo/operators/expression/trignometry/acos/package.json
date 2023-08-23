@@ -1,0 +1,8 @@
+{
+  "main": "../../../../lib/operators/expression/trignometry/acos.js",
+  "module": "../../../../es/operators/expression/trignometry/acos.js",
+  "es2015": "../../../../es/operators/expression/trignometry/acos.js",
+  "jsnext:main": "../../../../es/operators/expression/trignometry/acos.js",
+  "types": "../../../../types/operators/expression/trignometry/acos.d.ts",
+  "sideEffects": false
+}

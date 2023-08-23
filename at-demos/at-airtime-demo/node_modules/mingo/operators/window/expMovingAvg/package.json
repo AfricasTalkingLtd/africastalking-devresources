@@ -1,0 +1,8 @@
+{
+  "main": "../../../lib/operators/window/expMovingAvg.js",
+  "module": "../../../es/operators/window/expMovingAvg.js",
+  "es2015": "../../../es/operators/window/expMovingAvg.js",
+  "jsnext:main": "../../../es/operators/window/expMovingAvg.js",
+  "types": "../../../types/operators/window/expMovingAvg.d.ts",
+  "sideEffects": false
+}

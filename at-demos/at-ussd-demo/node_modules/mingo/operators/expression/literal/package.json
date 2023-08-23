@@ -1,0 +1,8 @@
+{
+  "main": "../../../lib/operators/expression/literal.js",
+  "module": "../../../es/operators/expression/literal.js",
+  "es2015": "../../../es/operators/expression/literal.js",
+  "jsnext:main": "../../../es/operators/expression/literal.js",
+  "types": "../../../types/operators/expression/literal.d.ts",
+  "sideEffects": false
+}

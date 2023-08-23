@@ -1,0 +1,8 @@
+{
+  "main": "../../../../lib/operators/expression/arithmetic/floor.js",
+  "module": "../../../../es/operators/expression/arithmetic/floor.js",
+  "es2015": "../../../../es/operators/expression/arithmetic/floor.js",
+  "jsnext:main": "../../../../es/operators/expression/arithmetic/floor.js",
+  "types": "../../../../types/operators/expression/arithmetic/floor.d.ts",
+  "sideEffects": false
+}

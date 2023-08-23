@@ -1,0 +1,8 @@
+{
+  "main": "../../../../lib/operators/expression/string/strcasecmp.js",
+  "module": "../../../../es/operators/expression/string/strcasecmp.js",
+  "es2015": "../../../../es/operators/expression/string/strcasecmp.js",
+  "jsnext:main": "../../../../es/operators/expression/string/strcasecmp.js",
+  "types": "../../../../types/operators/expression/string/strcasecmp.d.ts",
+  "sideEffects": false
+}

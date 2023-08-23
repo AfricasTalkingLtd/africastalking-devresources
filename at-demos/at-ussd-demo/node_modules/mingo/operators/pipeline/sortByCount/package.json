@@ -1,0 +1,8 @@
+{
+  "main": "../../../lib/operators/pipeline/sortByCount.js",
+  "module": "../../../es/operators/pipeline/sortByCount.js",
+  "es2015": "../../../es/operators/pipeline/sortByCount.js",
+  "jsnext:main": "../../../es/operators/pipeline/sortByCount.js",
+  "types": "../../../types/operators/pipeline/sortByCount.d.ts",
+  "sideEffects": false
+}

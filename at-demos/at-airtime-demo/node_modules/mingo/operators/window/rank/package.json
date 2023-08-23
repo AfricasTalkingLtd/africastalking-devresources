@@ -1,0 +1,8 @@
+{
+  "main": "../../../lib/operators/window/rank.js",
+  "module": "../../../es/operators/window/rank.js",
+  "es2015": "../../../es/operators/window/rank.js",
+  "jsnext:main": "../../../es/operators/window/rank.js",
+  "types": "../../../types/operators/window/rank.d.ts",
+  "sideEffects": false
+}

@@ -1,0 +1,8 @@
+{
+  "main": "../lib/query.js",
+  "module": "../es/query.js",
+  "es2015": "../es/query.js",
+  "jsnext:main": "../es/query.js",
+  "types": "../types/query.d.ts",
+  "sideEffects": false
+}

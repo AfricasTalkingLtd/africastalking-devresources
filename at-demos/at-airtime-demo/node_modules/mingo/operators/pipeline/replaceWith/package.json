@@ -1,0 +1,8 @@
+{
+  "main": "../../../lib/operators/pipeline/replaceWith.js",
+  "module": "../../../es/operators/pipeline/replaceWith.js",
+  "es2015": "../../../es/operators/pipeline/replaceWith.js",
+  "jsnext:main": "../../../es/operators/pipeline/replaceWith.js",
+  "types": "../../../types/operators/pipeline/replaceWith.d.ts",
+  "sideEffects": false
+}

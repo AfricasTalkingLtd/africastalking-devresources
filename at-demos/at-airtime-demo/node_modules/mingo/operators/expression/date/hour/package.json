@@ -1,0 +1,8 @@
+{
+  "main": "../../../../lib/operators/expression/date/hour.js",
+  "module": "../../../../es/operators/expression/date/hour.js",
+  "es2015": "../../../../es/operators/expression/date/hour.js",
+  "jsnext:main": "../../../../es/operators/expression/date/hour.js",
+  "types": "../../../../types/operators/expression/date/hour.d.ts",
+  "sideEffects": false
+}

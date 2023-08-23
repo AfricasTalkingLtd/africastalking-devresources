@@ -1,0 +1,8 @@
+{
+  "main": "../../../lib/operators/pipeline/unset.js",
+  "module": "../../../es/operators/pipeline/unset.js",
+  "es2015": "../../../es/operators/pipeline/unset.js",
+  "jsnext:main": "../../../es/operators/pipeline/unset.js",
+  "types": "../../../types/operators/pipeline/unset.d.ts",
+  "sideEffects": false
+}

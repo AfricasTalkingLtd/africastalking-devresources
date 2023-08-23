@@ -1,0 +1,8 @@
+{
+  "main": "../../../lib/operators/pipeline/sort.js",
+  "module": "../../../es/operators/pipeline/sort.js",
+  "es2015": "../../../es/operators/pipeline/sort.js",
+  "jsnext:main": "../../../es/operators/pipeline/sort.js",
+  "types": "../../../types/operators/pipeline/sort.d.ts",
+  "sideEffects": false
+}

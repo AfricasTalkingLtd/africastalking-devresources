@@ -1,0 +1,8 @@
+{
+  "main": "../../../../lib/operators/expression/array/indexOfArray.js",
+  "module": "../../../../es/operators/expression/array/indexOfArray.js",
+  "es2015": "../../../../es/operators/expression/array/indexOfArray.js",
+  "jsnext:main": "../../../../es/operators/expression/array/indexOfArray.js",
+  "types": "../../../../types/operators/expression/array/indexOfArray.d.ts",
+  "sideEffects": false
+}

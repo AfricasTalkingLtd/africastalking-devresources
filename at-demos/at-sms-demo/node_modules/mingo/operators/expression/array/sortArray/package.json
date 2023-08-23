@@ -1,0 +1,8 @@
+{
+  "main": "../../../../lib/operators/expression/array/sortArray.js",
+  "module": "../../../../es/operators/expression/array/sortArray.js",
+  "es2015": "../../../../es/operators/expression/array/sortArray.js",
+  "jsnext:main": "../../../../es/operators/expression/array/sortArray.js",
+  "types": "../../../../types/operators/expression/array/sortArray.d.ts",
+  "sideEffects": false
+}

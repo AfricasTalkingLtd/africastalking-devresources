@@ -1,0 +1,13 @@
+/**
+ * String Expression Operators: https://docs.mongodb.com/manual/reference/operator/aggregation/#string-expression-operators
+ */
+import { trimString } from "./_internal";
+/**
+ * Removes whitespace characters, including null, or the specified characters from the end of a string.
+ *
+ * @param obj
+ * @param expr
+ */
+export function $rtrim(obj, expr, options) {
+    return trimString(obj, expr, options, { left: false, right: true });
+}

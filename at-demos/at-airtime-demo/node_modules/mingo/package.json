@@ -1,0 +1,1798 @@
+{
+  "name": "mingo",
+  "version": "6.2.7",
+  "description": "MongoDB query language for in-memory objects",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "types": "types/index.d.ts",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kofrasa/mingo.git"
+  },
+  "files": [
+    "**/*.js",
+    "**/*.ts",
+    "**/*.json",
+    "LICENSE",
+    "README.md",
+    "CHANGELOG.md"
+  ],
+  "devDependencies": {},
+  "keywords": [
+    "util",
+    "mongo",
+    "nosql",
+    "query",
+    "aggregate",
+    "filter",
+    "group",
+    "project",
+    "search",
+    "transform"
+  ],
+  "author": {
+    "name": "Francis Asante",
+    "email": "kofrasa@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kofrasa/mingo/issues"
+  },
+  "lint-staged": {
+    "*.ts": "eslint --cache --fix"
+  },
+  "exports": {
+    "./package.json": "./package.json",
+    "./init/basic": {
+      "types": "./types/init/basic.d.ts",
+      "node": "./lib/init/basic.js",
+      "require": "./lib/init/basic.js",
+      "es2015": "./es/init/basic.js",
+      "default": "./es/init/basic.js"
+    },
+    "./init/system": {
+      "types": "./types/init/system.d.ts",
+      "node": "./lib/init/system.js",
+      "require": "./lib/init/system.js",
+      "es2015": "./es/init/system.js",
+      "default": "./es/init/system.js"
+    },
+    "./cursor": {
+      "types": "./types/cursor.d.ts",
+      "node": "./lib/cursor.js",
+      "require": "./lib/cursor.js",
+      "es2015": "./es/cursor.js",
+      "default": "./es/cursor.js"
+    },
+    "./lazy": {
+      "types": "./types/lazy.d.ts",
+      "node": "./lib/lazy.js",
+      "require": "./lib/lazy.js",
+      "es2015": "./es/lazy.js",
+      "default": "./es/lazy.js"
+    },
+    "./operators/pipeline/match": {
+      "types": "./types/operators/pipeline/match.d.ts",
+      "node": "./lib/operators/pipeline/match.js",
+      "require": "./lib/operators/pipeline/match.js",
+      "es2015": "./es/operators/pipeline/match.js",
+      "default": "./es/operators/pipeline/match.js"
+    },
+    "./operators/pipeline/project": {
+      "types": "./types/operators/pipeline/project.d.ts",
+      "node": "./lib/operators/pipeline/project.js",
+      "require": "./lib/operators/pipeline/project.js",
+      "es2015": "./es/operators/pipeline/project.js",
+      "default": "./es/operators/pipeline/project.js"
+    },
+    "./operators/pipeline/count": {
+      "types": "./types/operators/pipeline/count.d.ts",
+      "node": "./lib/operators/pipeline/count.js",
+      "require": "./lib/operators/pipeline/count.js",
+      "es2015": "./es/operators/pipeline/count.js",
+      "default": "./es/operators/pipeline/count.js"
+    },
+    "./operators/pipeline/set": {
+      "types": "./types/operators/pipeline/set.d.ts",
+      "node": "./lib/operators/pipeline/set.js",
+      "require": "./lib/operators/pipeline/set.js",
+      "es2015": "./es/operators/pipeline/set.js",
+      "default": "./es/operators/pipeline/set.js"
+    },
+    "./operators/pipeline/unwind": {
+      "types": "./types/operators/pipeline/unwind.d.ts",
+      "node": "./lib/operators/pipeline/unwind.js",
+      "require": "./lib/operators/pipeline/unwind.js",
+      "es2015": "./es/operators/pipeline/unwind.js",
+      "default": "./es/operators/pipeline/unwind.js"
+    },
+    "./operators/pipeline/facet": {
+      "types": "./types/operators/pipeline/facet.d.ts",
+      "node": "./lib/operators/pipeline/facet.js",
+      "require": "./lib/operators/pipeline/facet.js",
+      "es2015": "./es/operators/pipeline/facet.js",
+      "default": "./es/operators/pipeline/facet.js"
+    },
+    "./operators/pipeline/replaceRoot": {
+      "types": "./types/operators/pipeline/replaceRoot.d.ts",
+      "node": "./lib/operators/pipeline/replaceRoot.js",
+      "require": "./lib/operators/pipeline/replaceRoot.js",
+      "es2015": "./es/operators/pipeline/replaceRoot.js",
+      "default": "./es/operators/pipeline/replaceRoot.js"
+    },
+    "./operators/pipeline/sample": {
+      "types": "./types/operators/pipeline/sample.d.ts",
+      "node": "./lib/operators/pipeline/sample.js",
+      "require": "./lib/operators/pipeline/sample.js",
+      "es2015": "./es/operators/pipeline/sample.js",
+      "default": "./es/operators/pipeline/sample.js"
+    },
+    "./operators/pipeline/group": {
+      "types": "./types/operators/pipeline/group.d.ts",
+      "node": "./lib/operators/pipeline/group.js",
+      "require": "./lib/operators/pipeline/group.js",
+      "es2015": "./es/operators/pipeline/group.js",
+      "default": "./es/operators/pipeline/group.js"
+    },
+    "./operators/pipeline/redact": {
+      "types": "./types/operators/pipeline/redact.d.ts",
+      "node": "./lib/operators/pipeline/redact.js",
+      "require": "./lib/operators/pipeline/redact.js",
+      "es2015": "./es/operators/pipeline/redact.js",
+      "default": "./es/operators/pipeline/redact.js"
+    },
+    "./operators/pipeline/limit": {
+      "types": "./types/operators/pipeline/limit.d.ts",
+      "node": "./lib/operators/pipeline/limit.js",
+      "require": "./lib/operators/pipeline/limit.js",
+      "es2015": "./es/operators/pipeline/limit.js",
+      "default": "./es/operators/pipeline/limit.js"
+    },
+    "./operators/pipeline/lookup": {
+      "types": "./types/operators/pipeline/lookup.d.ts",
+      "node": "./lib/operators/pipeline/lookup.js",
+      "require": "./lib/operators/pipeline/lookup.js",
+      "es2015": "./es/operators/pipeline/lookup.js",
+      "default": "./es/operators/pipeline/lookup.js"
+    },
+    "./operators/pipeline/unionWith": {
+      "types": "./types/operators/pipeline/unionWith.d.ts",
+      "node": "./lib/operators/pipeline/unionWith.js",
+      "require": "./lib/operators/pipeline/unionWith.js",
+      "es2015": "./es/operators/pipeline/unionWith.js",
+      "default": "./es/operators/pipeline/unionWith.js"
+    },
+    "./operators/pipeline/setWindowFields": {
+      "types": "./types/operators/pipeline/setWindowFields.d.ts",
+      "node": "./lib/operators/pipeline/setWindowFields.js",
+      "require": "./lib/operators/pipeline/setWindowFields.js",
+      "es2015": "./es/operators/pipeline/setWindowFields.js",
+      "default": "./es/operators/pipeline/setWindowFields.js"
+    },
+    "./operators/pipeline/bucketAuto": {
+      "types": "./types/operators/pipeline/bucketAuto.d.ts",
+      "node": "./lib/operators/pipeline/bucketAuto.js",
+      "require": "./lib/operators/pipeline/bucketAuto.js",
+      "es2015": "./es/operators/pipeline/bucketAuto.js",
+      "default": "./es/operators/pipeline/bucketAuto.js"
+    },
+    "./operators/pipeline/sort": {
+      "types": "./types/operators/pipeline/sort.d.ts",
+      "node": "./lib/operators/pipeline/sort.js",
+      "require": "./lib/operators/pipeline/sort.js",
+      "es2015": "./es/operators/pipeline/sort.js",
+      "default": "./es/operators/pipeline/sort.js"
+    },
+    "./operators/pipeline/out": {
+      "types": "./types/operators/pipeline/out.d.ts",
+      "node": "./lib/operators/pipeline/out.js",
+      "require": "./lib/operators/pipeline/out.js",
+      "es2015": "./es/operators/pipeline/out.js",
+      "default": "./es/operators/pipeline/out.js"
+    },
+    "./operators/pipeline/sortByCount": {
+      "types": "./types/operators/pipeline/sortByCount.d.ts",
+      "node": "./lib/operators/pipeline/sortByCount.js",
+      "require": "./lib/operators/pipeline/sortByCount.js",
+      "es2015": "./es/operators/pipeline/sortByCount.js",
+      "default": "./es/operators/pipeline/sortByCount.js"
+    },
+    "./operators/pipeline": {
+      "types": "./types/operators/pipeline/index.d.ts",
+      "node": "./lib/operators/pipeline/index.js",
+      "require": "./lib/operators/pipeline/index.js",
+      "es2015": "./es/operators/pipeline/index.js",
+      "default": "./es/operators/pipeline/index.js"
+    },
+    "./operators/pipeline/skip": {
+      "types": "./types/operators/pipeline/skip.d.ts",
+      "node": "./lib/operators/pipeline/skip.js",
+      "require": "./lib/operators/pipeline/skip.js",
+      "es2015": "./es/operators/pipeline/skip.js",
+      "default": "./es/operators/pipeline/skip.js"
+    },
+    "./operators/pipeline/bucket": {
+      "types": "./types/operators/pipeline/bucket.d.ts",
+      "node": "./lib/operators/pipeline/bucket.js",
+      "require": "./lib/operators/pipeline/bucket.js",
+      "es2015": "./es/operators/pipeline/bucket.js",
+      "default": "./es/operators/pipeline/bucket.js"
+    },
+    "./operators/pipeline/addFields": {
+      "types": "./types/operators/pipeline/addFields.d.ts",
+      "node": "./lib/operators/pipeline/addFields.js",
+      "require": "./lib/operators/pipeline/addFields.js",
+      "es2015": "./es/operators/pipeline/addFields.js",
+      "default": "./es/operators/pipeline/addFields.js"
+    },
+    "./operators/pipeline/merge": {
+      "types": "./types/operators/pipeline/merge.d.ts",
+      "node": "./lib/operators/pipeline/merge.js",
+      "require": "./lib/operators/pipeline/merge.js",
+      "es2015": "./es/operators/pipeline/merge.js",
+      "default": "./es/operators/pipeline/merge.js"
+    },
+    "./operators/pipeline/unset": {
+      "types": "./types/operators/pipeline/unset.d.ts",
+      "node": "./lib/operators/pipeline/unset.js",
+      "require": "./lib/operators/pipeline/unset.js",
+      "es2015": "./es/operators/pipeline/unset.js",
+      "default": "./es/operators/pipeline/unset.js"
+    },
+    "./operators/pipeline/replaceWith": {
+      "types": "./types/operators/pipeline/replaceWith.d.ts",
+      "node": "./lib/operators/pipeline/replaceWith.js",
+      "require": "./lib/operators/pipeline/replaceWith.js",
+      "es2015": "./es/operators/pipeline/replaceWith.js",
+      "default": "./es/operators/pipeline/replaceWith.js"
+    },
+    "./operators/_predicates": {
+      "types": "./types/operators/_predicates.d.ts",
+      "node": "./lib/operators/_predicates.js",
+      "require": "./lib/operators/_predicates.js",
+      "es2015": "./es/operators/_predicates.js",
+      "default": "./es/operators/_predicates.js"
+    },
+    "./operators/window/rank": {
+      "types": "./types/operators/window/rank.d.ts",
+      "node": "./lib/operators/window/rank.js",
+      "require": "./lib/operators/window/rank.js",
+      "es2015": "./es/operators/window/rank.js",
+      "default": "./es/operators/window/rank.js"
+    },
+    "./operators/window/derivative": {
+      "types": "./types/operators/window/derivative.d.ts",
+      "node": "./lib/operators/window/derivative.js",
+      "require": "./lib/operators/window/derivative.js",
+      "es2015": "./es/operators/window/derivative.js",
+      "default": "./es/operators/window/derivative.js"
+    },
+    "./operators/window/documentNumber": {
+      "types": "./types/operators/window/documentNumber.d.ts",
+      "node": "./lib/operators/window/documentNumber.js",
+      "require": "./lib/operators/window/documentNumber.js",
+      "es2015": "./es/operators/window/documentNumber.js",
+      "default": "./es/operators/window/documentNumber.js"
+    },
+    "./operators/window/shift": {
+      "types": "./types/operators/window/shift.d.ts",
+      "node": "./lib/operators/window/shift.js",
+      "require": "./lib/operators/window/shift.js",
+      "es2015": "./es/operators/window/shift.js",
+      "default": "./es/operators/window/shift.js"
+    },
+    "./operators/window/denseRank": {
+      "types": "./types/operators/window/denseRank.d.ts",
+      "node": "./lib/operators/window/denseRank.js",
+      "require": "./lib/operators/window/denseRank.js",
+      "es2015": "./es/operators/window/denseRank.js",
+      "default": "./es/operators/window/denseRank.js"
+    },
+    "./operators/window/integral": {
+      "types": "./types/operators/window/integral.d.ts",
+      "node": "./lib/operators/window/integral.js",
+      "require": "./lib/operators/window/integral.js",
+      "es2015": "./es/operators/window/integral.js",
+      "default": "./es/operators/window/integral.js"
+    },
+    "./operators/window": {
+      "types": "./types/operators/window/index.d.ts",
+      "node": "./lib/operators/window/index.js",
+      "require": "./lib/operators/window/index.js",
+      "es2015": "./es/operators/window/index.js",
+      "default": "./es/operators/window/index.js"
+    },
+    "./operators/window/expMovingAvg": {
+      "types": "./types/operators/window/expMovingAvg.d.ts",
+      "node": "./lib/operators/window/expMovingAvg.js",
+      "require": "./lib/operators/window/expMovingAvg.js",
+      "es2015": "./es/operators/window/expMovingAvg.js",
+      "default": "./es/operators/window/expMovingAvg.js"
+    },
+    "./operators/accumulator/topN": {
+      "types": "./types/operators/accumulator/topN.d.ts",
+      "node": "./lib/operators/accumulator/topN.js",
+      "require": "./lib/operators/accumulator/topN.js",
+      "es2015": "./es/operators/accumulator/topN.js",
+      "default": "./es/operators/accumulator/topN.js"
+    },
+    "./operators/accumulator/avg": {
+      "types": "./types/operators/accumulator/avg.d.ts",
+      "node": "./lib/operators/accumulator/avg.js",
+      "require": "./lib/operators/accumulator/avg.js",
+      "es2015": "./es/operators/accumulator/avg.js",
+      "default": "./es/operators/accumulator/avg.js"
+    },
+    "./operators/accumulator/push": {
+      "types": "./types/operators/accumulator/push.d.ts",
+      "node": "./lib/operators/accumulator/push.js",
+      "require": "./lib/operators/accumulator/push.js",
+      "es2015": "./es/operators/accumulator/push.js",
+      "default": "./es/operators/accumulator/push.js"
+    },
+    "./operators/accumulator/count": {
+      "types": "./types/operators/accumulator/count.d.ts",
+      "node": "./lib/operators/accumulator/count.js",
+      "require": "./lib/operators/accumulator/count.js",
+      "es2015": "./es/operators/accumulator/count.js",
+      "default": "./es/operators/accumulator/count.js"
+    },
+    "./operators/accumulator/maxN": {
+      "types": "./types/operators/accumulator/maxN.d.ts",
+      "node": "./lib/operators/accumulator/maxN.js",
+      "require": "./lib/operators/accumulator/maxN.js",
+      "es2015": "./es/operators/accumulator/maxN.js",
+      "default": "./es/operators/accumulator/maxN.js"
+    },
+    "./operators/accumulator/lastN": {
+      "types": "./types/operators/accumulator/lastN.d.ts",
+      "node": "./lib/operators/accumulator/lastN.js",
+      "require": "./lib/operators/accumulator/lastN.js",
+      "es2015": "./es/operators/accumulator/lastN.js",
+      "default": "./es/operators/accumulator/lastN.js"
+    },
+    "./operators/accumulator/sum": {
+      "types": "./types/operators/accumulator/sum.d.ts",
+      "node": "./lib/operators/accumulator/sum.js",
+      "require": "./lib/operators/accumulator/sum.js",
+      "es2015": "./es/operators/accumulator/sum.js",
+      "default": "./es/operators/accumulator/sum.js"
+    },
+    "./operators/accumulator/mergeObjects": {
+      "types": "./types/operators/accumulator/mergeObjects.d.ts",
+      "node": "./lib/operators/accumulator/mergeObjects.js",
+      "require": "./lib/operators/accumulator/mergeObjects.js",
+      "es2015": "./es/operators/accumulator/mergeObjects.js",
+      "default": "./es/operators/accumulator/mergeObjects.js"
+    },
+    "./operators/accumulator/last": {
+      "types": "./types/operators/accumulator/last.d.ts",
+      "node": "./lib/operators/accumulator/last.js",
+      "require": "./lib/operators/accumulator/last.js",
+      "es2015": "./es/operators/accumulator/last.js",
+      "default": "./es/operators/accumulator/last.js"
+    },
+    "./operators/accumulator/first": {
+      "types": "./types/operators/accumulator/first.d.ts",
+      "node": "./lib/operators/accumulator/first.js",
+      "require": "./lib/operators/accumulator/first.js",
+      "es2015": "./es/operators/accumulator/first.js",
+      "default": "./es/operators/accumulator/first.js"
+    },
+    "./operators/accumulator/accumulator": {
+      "types": "./types/operators/accumulator/accumulator.d.ts",
+      "node": "./lib/operators/accumulator/accumulator.js",
+      "require": "./lib/operators/accumulator/accumulator.js",
+      "es2015": "./es/operators/accumulator/accumulator.js",
+      "default": "./es/operators/accumulator/accumulator.js"
+    },
+    "./operators/accumulator/firstN": {
+      "types": "./types/operators/accumulator/firstN.d.ts",
+      "node": "./lib/operators/accumulator/firstN.js",
+      "require": "./lib/operators/accumulator/firstN.js",
+      "es2015": "./es/operators/accumulator/firstN.js",
+      "default": "./es/operators/accumulator/firstN.js"
+    },
+    "./operators/accumulator/min": {
+      "types": "./types/operators/accumulator/min.d.ts",
+      "node": "./lib/operators/accumulator/min.js",
+      "require": "./lib/operators/accumulator/min.js",
+      "es2015": "./es/operators/accumulator/min.js",
+      "default": "./es/operators/accumulator/min.js"
+    },
+    "./operators/accumulator/minN": {
+      "types": "./types/operators/accumulator/minN.d.ts",
+      "node": "./lib/operators/accumulator/minN.js",
+      "require": "./lib/operators/accumulator/minN.js",
+      "es2015": "./es/operators/accumulator/minN.js",
+      "default": "./es/operators/accumulator/minN.js"
+    },
+    "./operators/accumulator/top": {
+      "types": "./types/operators/accumulator/top.d.ts",
+      "node": "./lib/operators/accumulator/top.js",
+      "require": "./lib/operators/accumulator/top.js",
+      "es2015": "./es/operators/accumulator/top.js",
+      "default": "./es/operators/accumulator/top.js"
+    },
+    "./operators/accumulator/stdDevPop": {
+      "types": "./types/operators/accumulator/stdDevPop.d.ts",
+      "node": "./lib/operators/accumulator/stdDevPop.js",
+      "require": "./lib/operators/accumulator/stdDevPop.js",
+      "es2015": "./es/operators/accumulator/stdDevPop.js",
+      "default": "./es/operators/accumulator/stdDevPop.js"
+    },
+    "./operators/accumulator/addToSet": {
+      "types": "./types/operators/accumulator/addToSet.d.ts",
+      "node": "./lib/operators/accumulator/addToSet.js",
+      "require": "./lib/operators/accumulator/addToSet.js",
+      "es2015": "./es/operators/accumulator/addToSet.js",
+      "default": "./es/operators/accumulator/addToSet.js"
+    },
+    "./operators/accumulator/bottom": {
+      "types": "./types/operators/accumulator/bottom.d.ts",
+      "node": "./lib/operators/accumulator/bottom.js",
+      "require": "./lib/operators/accumulator/bottom.js",
+      "es2015": "./es/operators/accumulator/bottom.js",
+      "default": "./es/operators/accumulator/bottom.js"
+    },
+    "./operators/accumulator": {
+      "types": "./types/operators/accumulator/index.d.ts",
+      "node": "./lib/operators/accumulator/index.js",
+      "require": "./lib/operators/accumulator/index.js",
+      "es2015": "./es/operators/accumulator/index.js",
+      "default": "./es/operators/accumulator/index.js"
+    },
+    "./operators/accumulator/stdDevSamp": {
+      "types": "./types/operators/accumulator/stdDevSamp.d.ts",
+      "node": "./lib/operators/accumulator/stdDevSamp.js",
+      "require": "./lib/operators/accumulator/stdDevSamp.js",
+      "es2015": "./es/operators/accumulator/stdDevSamp.js",
+      "default": "./es/operators/accumulator/stdDevSamp.js"
+    },
+    "./operators/accumulator/covarianceSamp": {
+      "types": "./types/operators/accumulator/covarianceSamp.d.ts",
+      "node": "./lib/operators/accumulator/covarianceSamp.js",
+      "require": "./lib/operators/accumulator/covarianceSamp.js",
+      "es2015": "./es/operators/accumulator/covarianceSamp.js",
+      "default": "./es/operators/accumulator/covarianceSamp.js"
+    },
+    "./operators/accumulator/bottomN": {
+      "types": "./types/operators/accumulator/bottomN.d.ts",
+      "node": "./lib/operators/accumulator/bottomN.js",
+      "require": "./lib/operators/accumulator/bottomN.js",
+      "es2015": "./es/operators/accumulator/bottomN.js",
+      "default": "./es/operators/accumulator/bottomN.js"
+    },
+    "./operators/accumulator/max": {
+      "types": "./types/operators/accumulator/max.d.ts",
+      "node": "./lib/operators/accumulator/max.js",
+      "require": "./lib/operators/accumulator/max.js",
+      "es2015": "./es/operators/accumulator/max.js",
+      "default": "./es/operators/accumulator/max.js"
+    },
+    "./operators/accumulator/covariancePop": {
+      "types": "./types/operators/accumulator/covariancePop.d.ts",
+      "node": "./lib/operators/accumulator/covariancePop.js",
+      "require": "./lib/operators/accumulator/covariancePop.js",
+      "es2015": "./es/operators/accumulator/covariancePop.js",
+      "default": "./es/operators/accumulator/covariancePop.js"
+    },
+    "./operators/expression/misc/sampleRate": {
+      "types": "./types/operators/expression/misc/sampleRate.d.ts",
+      "node": "./lib/operators/expression/misc/sampleRate.js",
+      "require": "./lib/operators/expression/misc/sampleRate.js",
+      "es2015": "./es/operators/expression/misc/sampleRate.js",
+      "default": "./es/operators/expression/misc/sampleRate.js"
+    },
+    "./operators/expression/misc/rand": {
+      "types": "./types/operators/expression/misc/rand.d.ts",
+      "node": "./lib/operators/expression/misc/rand.js",
+      "require": "./lib/operators/expression/misc/rand.js",
+      "es2015": "./es/operators/expression/misc/rand.js",
+      "default": "./es/operators/expression/misc/rand.js"
+    },
+    "./operators/expression/misc/getField": {
+      "types": "./types/operators/expression/misc/getField.d.ts",
+      "node": "./lib/operators/expression/misc/getField.js",
+      "require": "./lib/operators/expression/misc/getField.js",
+      "es2015": "./es/operators/expression/misc/getField.js",
+      "default": "./es/operators/expression/misc/getField.js"
+    },
+    "./operators/expression/misc": {
+      "types": "./types/operators/expression/misc/index.d.ts",
+      "node": "./lib/operators/expression/misc/index.js",
+      "require": "./lib/operators/expression/misc/index.js",
+      "es2015": "./es/operators/expression/misc/index.js",
+      "default": "./es/operators/expression/misc/index.js"
+    },
+    "./operators/expression/conditional/cond": {
+      "types": "./types/operators/expression/conditional/cond.d.ts",
+      "node": "./lib/operators/expression/conditional/cond.js",
+      "require": "./lib/operators/expression/conditional/cond.js",
+      "es2015": "./es/operators/expression/conditional/cond.js",
+      "default": "./es/operators/expression/conditional/cond.js"
+    },
+    "./operators/expression/conditional/ifNull": {
+      "types": "./types/operators/expression/conditional/ifNull.d.ts",
+      "node": "./lib/operators/expression/conditional/ifNull.js",
+      "require": "./lib/operators/expression/conditional/ifNull.js",
+      "es2015": "./es/operators/expression/conditional/ifNull.js",
+      "default": "./es/operators/expression/conditional/ifNull.js"
+    },
+    "./operators/expression/conditional/switch": {
+      "types": "./types/operators/expression/conditional/switch.d.ts",
+      "node": "./lib/operators/expression/conditional/switch.js",
+      "require": "./lib/operators/expression/conditional/switch.js",
+      "es2015": "./es/operators/expression/conditional/switch.js",
+      "default": "./es/operators/expression/conditional/switch.js"
+    },
+    "./operators/expression/conditional": {
+      "types": "./types/operators/expression/conditional/index.d.ts",
+      "node": "./lib/operators/expression/conditional/index.js",
+      "require": "./lib/operators/expression/conditional/index.js",
+      "es2015": "./es/operators/expression/conditional/index.js",
+      "default": "./es/operators/expression/conditional/index.js"
+    },
+    "./operators/expression/variable/let": {
+      "types": "./types/operators/expression/variable/let.d.ts",
+      "node": "./lib/operators/expression/variable/let.js",
+      "require": "./lib/operators/expression/variable/let.js",
+      "es2015": "./es/operators/expression/variable/let.js",
+      "default": "./es/operators/expression/variable/let.js"
+    },
+    "./operators/expression/variable": {
+      "types": "./types/operators/expression/variable/index.d.ts",
+      "node": "./lib/operators/expression/variable/index.js",
+      "require": "./lib/operators/expression/variable/index.js",
+      "es2015": "./es/operators/expression/variable/index.js",
+      "default": "./es/operators/expression/variable/index.js"
+    },
+    "./operators/expression/array/maxN": {
+      "types": "./types/operators/expression/array/maxN.d.ts",
+      "node": "./lib/operators/expression/array/maxN.js",
+      "require": "./lib/operators/expression/array/maxN.js",
+      "es2015": "./es/operators/expression/array/maxN.js",
+      "default": "./es/operators/expression/array/maxN.js"
+    },
+    "./operators/expression/array/lastN": {
+      "types": "./types/operators/expression/array/lastN.d.ts",
+      "node": "./lib/operators/expression/array/lastN.js",
+      "require": "./lib/operators/expression/array/lastN.js",
+      "es2015": "./es/operators/expression/array/lastN.js",
+      "default": "./es/operators/expression/array/lastN.js"
+    },
+    "./operators/expression/array/filter": {
+      "types": "./types/operators/expression/array/filter.d.ts",
+      "node": "./lib/operators/expression/array/filter.js",
+      "require": "./lib/operators/expression/array/filter.js",
+      "es2015": "./es/operators/expression/array/filter.js",
+      "default": "./es/operators/expression/array/filter.js"
+    },
+    "./operators/expression/array/arrayElemAt": {
+      "types": "./types/operators/expression/array/arrayElemAt.d.ts",
+      "node": "./lib/operators/expression/array/arrayElemAt.js",
+      "require": "./lib/operators/expression/array/arrayElemAt.js",
+      "es2015": "./es/operators/expression/array/arrayElemAt.js",
+      "default": "./es/operators/expression/array/arrayElemAt.js"
+    },
+    "./operators/expression/array/last": {
+      "types": "./types/operators/expression/array/last.d.ts",
+      "node": "./lib/operators/expression/array/last.js",
+      "require": "./lib/operators/expression/array/last.js",
+      "es2015": "./es/operators/expression/array/last.js",
+      "default": "./es/operators/expression/array/last.js"
+    },
+    "./operators/expression/array/first": {
+      "types": "./types/operators/expression/array/first.d.ts",
+      "node": "./lib/operators/expression/array/first.js",
+      "require": "./lib/operators/expression/array/first.js",
+      "es2015": "./es/operators/expression/array/first.js",
+      "default": "./es/operators/expression/array/first.js"
+    },
+    "./operators/expression/array/concatArrays": {
+      "types": "./types/operators/expression/array/concatArrays.d.ts",
+      "node": "./lib/operators/expression/array/concatArrays.js",
+      "require": "./lib/operators/expression/array/concatArrays.js",
+      "es2015": "./es/operators/expression/array/concatArrays.js",
+      "default": "./es/operators/expression/array/concatArrays.js"
+    },
+    "./operators/expression/array/isArray": {
+      "types": "./types/operators/expression/array/isArray.d.ts",
+      "node": "./lib/operators/expression/array/isArray.js",
+      "require": "./lib/operators/expression/array/isArray.js",
+      "es2015": "./es/operators/expression/array/isArray.js",
+      "default": "./es/operators/expression/array/isArray.js"
+    },
+    "./operators/expression/array/zip": {
+      "types": "./types/operators/expression/array/zip.d.ts",
+      "node": "./lib/operators/expression/array/zip.js",
+      "require": "./lib/operators/expression/array/zip.js",
+      "es2015": "./es/operators/expression/array/zip.js",
+      "default": "./es/operators/expression/array/zip.js"
+    },
+    "./operators/expression/array/firstN": {
+      "types": "./types/operators/expression/array/firstN.d.ts",
+      "node": "./lib/operators/expression/array/firstN.js",
+      "require": "./lib/operators/expression/array/firstN.js",
+      "es2015": "./es/operators/expression/array/firstN.js",
+      "default": "./es/operators/expression/array/firstN.js"
+    },
+    "./operators/expression/array/map": {
+      "types": "./types/operators/expression/array/map.d.ts",
+      "node": "./lib/operators/expression/array/map.js",
+      "require": "./lib/operators/expression/array/map.js",
+      "es2015": "./es/operators/expression/array/map.js",
+      "default": "./es/operators/expression/array/map.js"
+    },
+    "./operators/expression/array/size": {
+      "types": "./types/operators/expression/array/size.d.ts",
+      "node": "./lib/operators/expression/array/size.js",
+      "require": "./lib/operators/expression/array/size.js",
+      "es2015": "./es/operators/expression/array/size.js",
+      "default": "./es/operators/expression/array/size.js"
+    },
+    "./operators/expression/array/minN": {
+      "types": "./types/operators/expression/array/minN.d.ts",
+      "node": "./lib/operators/expression/array/minN.js",
+      "require": "./lib/operators/expression/array/minN.js",
+      "es2015": "./es/operators/expression/array/minN.js",
+      "default": "./es/operators/expression/array/minN.js"
+    },
+    "./operators/expression/array/nin": {
+      "types": "./types/operators/expression/array/nin.d.ts",
+      "node": "./lib/operators/expression/array/nin.js",
+      "require": "./lib/operators/expression/array/nin.js",
+      "es2015": "./es/operators/expression/array/nin.js",
+      "default": "./es/operators/expression/array/nin.js"
+    },
+    "./operators/expression/array/in": {
+      "types": "./types/operators/expression/array/in.d.ts",
+      "node": "./lib/operators/expression/array/in.js",
+      "require": "./lib/operators/expression/array/in.js",
+      "es2015": "./es/operators/expression/array/in.js",
+      "default": "./es/operators/expression/array/in.js"
+    },
+    "./operators/expression/array/reverseArray": {
+      "types": "./types/operators/expression/array/reverseArray.d.ts",
+      "node": "./lib/operators/expression/array/reverseArray.js",
+      "require": "./lib/operators/expression/array/reverseArray.js",
+      "es2015": "./es/operators/expression/array/reverseArray.js",
+      "default": "./es/operators/expression/array/reverseArray.js"
+    },
+    "./operators/expression/array/indexOfArray": {
+      "types": "./types/operators/expression/array/indexOfArray.d.ts",
+      "node": "./lib/operators/expression/array/indexOfArray.js",
+      "require": "./lib/operators/expression/array/indexOfArray.js",
+      "es2015": "./es/operators/expression/array/indexOfArray.js",
+      "default": "./es/operators/expression/array/indexOfArray.js"
+    },
+    "./operators/expression/array/range": {
+      "types": "./types/operators/expression/array/range.d.ts",
+      "node": "./lib/operators/expression/array/range.js",
+      "require": "./lib/operators/expression/array/range.js",
+      "es2015": "./es/operators/expression/array/range.js",
+      "default": "./es/operators/expression/array/range.js"
+    },
+    "./operators/expression/array/reduce": {
+      "types": "./types/operators/expression/array/reduce.d.ts",
+      "node": "./lib/operators/expression/array/reduce.js",
+      "require": "./lib/operators/expression/array/reduce.js",
+      "es2015": "./es/operators/expression/array/reduce.js",
+      "default": "./es/operators/expression/array/reduce.js"
+    },
+    "./operators/expression/array": {
+      "types": "./types/operators/expression/array/index.d.ts",
+      "node": "./lib/operators/expression/array/index.js",
+      "require": "./lib/operators/expression/array/index.js",
+      "es2015": "./es/operators/expression/array/index.js",
+      "default": "./es/operators/expression/array/index.js"
+    },
+    "./operators/expression/array/slice": {
+      "types": "./types/operators/expression/array/slice.d.ts",
+      "node": "./lib/operators/expression/array/slice.js",
+      "require": "./lib/operators/expression/array/slice.js",
+      "es2015": "./es/operators/expression/array/slice.js",
+      "default": "./es/operators/expression/array/slice.js"
+    },
+    "./operators/expression/array/sortArray": {
+      "types": "./types/operators/expression/array/sortArray.d.ts",
+      "node": "./lib/operators/expression/array/sortArray.js",
+      "require": "./lib/operators/expression/array/sortArray.js",
+      "es2015": "./es/operators/expression/array/sortArray.js",
+      "default": "./es/operators/expression/array/sortArray.js"
+    },
+    "./operators/expression/array/arrayToObject": {
+      "types": "./types/operators/expression/array/arrayToObject.d.ts",
+      "node": "./lib/operators/expression/array/arrayToObject.js",
+      "require": "./lib/operators/expression/array/arrayToObject.js",
+      "es2015": "./es/operators/expression/array/arrayToObject.js",
+      "default": "./es/operators/expression/array/arrayToObject.js"
+    },
+    "./operators/expression/date/month": {
+      "types": "./types/operators/expression/date/month.d.ts",
+      "node": "./lib/operators/expression/date/month.js",
+      "require": "./lib/operators/expression/date/month.js",
+      "es2015": "./es/operators/expression/date/month.js",
+      "default": "./es/operators/expression/date/month.js"
+    },
+    "./operators/expression/date/dayOfWeek": {
+      "types": "./types/operators/expression/date/dayOfWeek.d.ts",
+      "node": "./lib/operators/expression/date/dayOfWeek.js",
+      "require": "./lib/operators/expression/date/dayOfWeek.js",
+      "es2015": "./es/operators/expression/date/dayOfWeek.js",
+      "default": "./es/operators/expression/date/dayOfWeek.js"
+    },
+    "./operators/expression/date/dateToParts": {
+      "types": "./types/operators/expression/date/dateToParts.d.ts",
+      "node": "./lib/operators/expression/date/dateToParts.js",
+      "require": "./lib/operators/expression/date/dateToParts.js",
+      "es2015": "./es/operators/expression/date/dateToParts.js",
+      "default": "./es/operators/expression/date/dateToParts.js"
+    },
+    "./operators/expression/date/dateToString": {
+      "types": "./types/operators/expression/date/dateToString.d.ts",
+      "node": "./lib/operators/expression/date/dateToString.js",
+      "require": "./lib/operators/expression/date/dateToString.js",
+      "es2015": "./es/operators/expression/date/dateToString.js",
+      "default": "./es/operators/expression/date/dateToString.js"
+    },
+    "./operators/expression/date/isoWeekYear": {
+      "types": "./types/operators/expression/date/isoWeekYear.d.ts",
+      "node": "./lib/operators/expression/date/isoWeekYear.js",
+      "require": "./lib/operators/expression/date/isoWeekYear.js",
+      "es2015": "./es/operators/expression/date/isoWeekYear.js",
+      "default": "./es/operators/expression/date/isoWeekYear.js"
+    },
+    "./operators/expression/date/week": {
+      "types": "./types/operators/expression/date/week.d.ts",
+      "node": "./lib/operators/expression/date/week.js",
+      "require": "./lib/operators/expression/date/week.js",
+      "es2015": "./es/operators/expression/date/week.js",
+      "default": "./es/operators/expression/date/week.js"
+    },
+    "./operators/expression/date/millisecond": {
+      "types": "./types/operators/expression/date/millisecond.d.ts",
+      "node": "./lib/operators/expression/date/millisecond.js",
+      "require": "./lib/operators/expression/date/millisecond.js",
+      "es2015": "./es/operators/expression/date/millisecond.js",
+      "default": "./es/operators/expression/date/millisecond.js"
+    },
+    "./operators/expression/date/minute": {
+      "types": "./types/operators/expression/date/minute.d.ts",
+      "node": "./lib/operators/expression/date/minute.js",
+      "require": "./lib/operators/expression/date/minute.js",
+      "es2015": "./es/operators/expression/date/minute.js",
+      "default": "./es/operators/expression/date/minute.js"
+    },
+    "./operators/expression/date/hour": {
+      "types": "./types/operators/expression/date/hour.d.ts",
+      "node": "./lib/operators/expression/date/hour.js",
+      "require": "./lib/operators/expression/date/hour.js",
+      "es2015": "./es/operators/expression/date/hour.js",
+      "default": "./es/operators/expression/date/hour.js"
+    },
+    "./operators/expression/date/dateSubtract": {
+      "types": "./types/operators/expression/date/dateSubtract.d.ts",
+      "node": "./lib/operators/expression/date/dateSubtract.js",
+      "require": "./lib/operators/expression/date/dateSubtract.js",
+      "es2015": "./es/operators/expression/date/dateSubtract.js",
+      "default": "./es/operators/expression/date/dateSubtract.js"
+    },
+    "./operators/expression/date/dateDiff": {
+      "types": "./types/operators/expression/date/dateDiff.d.ts",
+      "node": "./lib/operators/expression/date/dateDiff.js",
+      "require": "./lib/operators/expression/date/dateDiff.js",
+      "es2015": "./es/operators/expression/date/dateDiff.js",
+      "default": "./es/operators/expression/date/dateDiff.js"
+    },
+    "./operators/expression/date/isoWeek": {
+      "types": "./types/operators/expression/date/isoWeek.d.ts",
+      "node": "./lib/operators/expression/date/isoWeek.js",
+      "require": "./lib/operators/expression/date/isoWeek.js",
+      "es2015": "./es/operators/expression/date/isoWeek.js",
+      "default": "./es/operators/expression/date/isoWeek.js"
+    },
+    "./operators/expression/date/second": {
+      "types": "./types/operators/expression/date/second.d.ts",
+      "node": "./lib/operators/expression/date/second.js",
+      "require": "./lib/operators/expression/date/second.js",
+      "es2015": "./es/operators/expression/date/second.js",
+      "default": "./es/operators/expression/date/second.js"
+    },
+    "./operators/expression/date/dateAdd": {
+      "types": "./types/operators/expression/date/dateAdd.d.ts",
+      "node": "./lib/operators/expression/date/dateAdd.js",
+      "require": "./lib/operators/expression/date/dateAdd.js",
+      "es2015": "./es/operators/expression/date/dateAdd.js",
+      "default": "./es/operators/expression/date/dateAdd.js"
+    },
+    "./operators/expression/date/dayOfYear": {
+      "types": "./types/operators/expression/date/dayOfYear.d.ts",
+      "node": "./lib/operators/expression/date/dayOfYear.js",
+      "require": "./lib/operators/expression/date/dayOfYear.js",
+      "es2015": "./es/operators/expression/date/dayOfYear.js",
+      "default": "./es/operators/expression/date/dayOfYear.js"
+    },
+    "./operators/expression/date/dayOfMonth": {
+      "types": "./types/operators/expression/date/dayOfMonth.d.ts",
+      "node": "./lib/operators/expression/date/dayOfMonth.js",
+      "require": "./lib/operators/expression/date/dayOfMonth.js",
+      "es2015": "./es/operators/expression/date/dayOfMonth.js",
+      "default": "./es/operators/expression/date/dayOfMonth.js"
+    },
+    "./operators/expression/date": {
+      "types": "./types/operators/expression/date/index.d.ts",
+      "node": "./lib/operators/expression/date/index.js",
+      "require": "./lib/operators/expression/date/index.js",
+      "es2015": "./es/operators/expression/date/index.js",
+      "default": "./es/operators/expression/date/index.js"
+    },
+    "./operators/expression/date/year": {
+      "types": "./types/operators/expression/date/year.d.ts",
+      "node": "./lib/operators/expression/date/year.js",
+      "require": "./lib/operators/expression/date/year.js",
+      "es2015": "./es/operators/expression/date/year.js",
+      "default": "./es/operators/expression/date/year.js"
+    },
+    "./operators/expression/date/isoDayOfWeek": {
+      "types": "./types/operators/expression/date/isoDayOfWeek.d.ts",
+      "node": "./lib/operators/expression/date/isoDayOfWeek.js",
+      "require": "./lib/operators/expression/date/isoDayOfWeek.js",
+      "es2015": "./es/operators/expression/date/isoDayOfWeek.js",
+      "default": "./es/operators/expression/date/isoDayOfWeek.js"
+    },
+    "./operators/expression/date/dateFromParts": {
+      "types": "./types/operators/expression/date/dateFromParts.d.ts",
+      "node": "./lib/operators/expression/date/dateFromParts.js",
+      "require": "./lib/operators/expression/date/dateFromParts.js",
+      "es2015": "./es/operators/expression/date/dateFromParts.js",
+      "default": "./es/operators/expression/date/dateFromParts.js"
+    },
+    "./operators/expression/date/dateFromString": {
+      "types": "./types/operators/expression/date/dateFromString.d.ts",
+      "node": "./lib/operators/expression/date/dateFromString.js",
+      "require": "./lib/operators/expression/date/dateFromString.js",
+      "es2015": "./es/operators/expression/date/dateFromString.js",
+      "default": "./es/operators/expression/date/dateFromString.js"
+    },
+    "./operators/expression/type/toDate": {
+      "types": "./types/operators/expression/type/toDate.d.ts",
+      "node": "./lib/operators/expression/type/toDate.js",
+      "require": "./lib/operators/expression/type/toDate.js",
+      "es2015": "./es/operators/expression/type/toDate.js",
+      "default": "./es/operators/expression/type/toDate.js"
+    },
+    "./operators/expression/type/toInt": {
+      "types": "./types/operators/expression/type/toInt.d.ts",
+      "node": "./lib/operators/expression/type/toInt.js",
+      "require": "./lib/operators/expression/type/toInt.js",
+      "es2015": "./es/operators/expression/type/toInt.js",
+      "default": "./es/operators/expression/type/toInt.js"
+    },
+    "./operators/expression/type/toDecimal": {
+      "types": "./types/operators/expression/type/toDecimal.d.ts",
+      "node": "./lib/operators/expression/type/toDecimal.js",
+      "require": "./lib/operators/expression/type/toDecimal.js",
+      "es2015": "./es/operators/expression/type/toDecimal.js",
+      "default": "./es/operators/expression/type/toDecimal.js"
+    },
+    "./operators/expression/type/toLong": {
+      "types": "./types/operators/expression/type/toLong.d.ts",
+      "node": "./lib/operators/expression/type/toLong.js",
+      "require": "./lib/operators/expression/type/toLong.js",
+      "es2015": "./es/operators/expression/type/toLong.js",
+      "default": "./es/operators/expression/type/toLong.js"
+    },
+    "./operators/expression/type/isNumber": {
+      "types": "./types/operators/expression/type/isNumber.d.ts",
+      "node": "./lib/operators/expression/type/isNumber.js",
+      "require": "./lib/operators/expression/type/isNumber.js",
+      "es2015": "./es/operators/expression/type/isNumber.js",
+      "default": "./es/operators/expression/type/isNumber.js"
+    },
+    "./operators/expression/type/type": {
+      "types": "./types/operators/expression/type/type.d.ts",
+      "node": "./lib/operators/expression/type/type.js",
+      "require": "./lib/operators/expression/type/type.js",
+      "es2015": "./es/operators/expression/type/type.js",
+      "default": "./es/operators/expression/type/type.js"
+    },
+    "./operators/expression/type/toDouble": {
+      "types": "./types/operators/expression/type/toDouble.d.ts",
+      "node": "./lib/operators/expression/type/toDouble.js",
+      "require": "./lib/operators/expression/type/toDouble.js",
+      "es2015": "./es/operators/expression/type/toDouble.js",
+      "default": "./es/operators/expression/type/toDouble.js"
+    },
+    "./operators/expression/type/toString": {
+      "types": "./types/operators/expression/type/toString.d.ts",
+      "node": "./lib/operators/expression/type/toString.js",
+      "require": "./lib/operators/expression/type/toString.js",
+      "es2015": "./es/operators/expression/type/toString.js",
+      "default": "./es/operators/expression/type/toString.js"
+    },
+    "./operators/expression/type/toBool": {
+      "types": "./types/operators/expression/type/toBool.d.ts",
+      "node": "./lib/operators/expression/type/toBool.js",
+      "require": "./lib/operators/expression/type/toBool.js",
+      "es2015": "./es/operators/expression/type/toBool.js",
+      "default": "./es/operators/expression/type/toBool.js"
+    },
+    "./operators/expression/type/convert": {
+      "types": "./types/operators/expression/type/convert.d.ts",
+      "node": "./lib/operators/expression/type/convert.js",
+      "require": "./lib/operators/expression/type/convert.js",
+      "es2015": "./es/operators/expression/type/convert.js",
+      "default": "./es/operators/expression/type/convert.js"
+    },
+    "./operators/expression/type": {
+      "types": "./types/operators/expression/type/index.d.ts",
+      "node": "./lib/operators/expression/type/index.js",
+      "require": "./lib/operators/expression/type/index.js",
+      "es2015": "./es/operators/expression/type/index.js",
+      "default": "./es/operators/expression/type/index.js"
+    },
+    "./operators/expression/object/objectToArray": {
+      "types": "./types/operators/expression/object/objectToArray.d.ts",
+      "node": "./lib/operators/expression/object/objectToArray.js",
+      "require": "./lib/operators/expression/object/objectToArray.js",
+      "es2015": "./es/operators/expression/object/objectToArray.js",
+      "default": "./es/operators/expression/object/objectToArray.js"
+    },
+    "./operators/expression/object/mergeObjects": {
+      "types": "./types/operators/expression/object/mergeObjects.d.ts",
+      "node": "./lib/operators/expression/object/mergeObjects.js",
+      "require": "./lib/operators/expression/object/mergeObjects.js",
+      "es2015": "./es/operators/expression/object/mergeObjects.js",
+      "default": "./es/operators/expression/object/mergeObjects.js"
+    },
+    "./operators/expression/object/unsetField": {
+      "types": "./types/operators/expression/object/unsetField.d.ts",
+      "node": "./lib/operators/expression/object/unsetField.js",
+      "require": "./lib/operators/expression/object/unsetField.js",
+      "es2015": "./es/operators/expression/object/unsetField.js",
+      "default": "./es/operators/expression/object/unsetField.js"
+    },
+    "./operators/expression/object": {
+      "types": "./types/operators/expression/object/index.d.ts",
+      "node": "./lib/operators/expression/object/index.js",
+      "require": "./lib/operators/expression/object/index.js",
+      "es2015": "./es/operators/expression/object/index.js",
+      "default": "./es/operators/expression/object/index.js"
+    },
+    "./operators/expression/object/setField": {
+      "types": "./types/operators/expression/object/setField.d.ts",
+      "node": "./lib/operators/expression/object/setField.js",
+      "require": "./lib/operators/expression/object/setField.js",
+      "es2015": "./es/operators/expression/object/setField.js",
+      "default": "./es/operators/expression/object/setField.js"
+    },
+    "./operators/expression/boolean/and": {
+      "types": "./types/operators/expression/boolean/and.d.ts",
+      "node": "./lib/operators/expression/boolean/and.js",
+      "require": "./lib/operators/expression/boolean/and.js",
+      "es2015": "./es/operators/expression/boolean/and.js",
+      "default": "./es/operators/expression/boolean/and.js"
+    },
+    "./operators/expression/boolean/not": {
+      "types": "./types/operators/expression/boolean/not.d.ts",
+      "node": "./lib/operators/expression/boolean/not.js",
+      "require": "./lib/operators/expression/boolean/not.js",
+      "es2015": "./es/operators/expression/boolean/not.js",
+      "default": "./es/operators/expression/boolean/not.js"
+    },
+    "./operators/expression/boolean/or": {
+      "types": "./types/operators/expression/boolean/or.d.ts",
+      "node": "./lib/operators/expression/boolean/or.js",
+      "require": "./lib/operators/expression/boolean/or.js",
+      "es2015": "./es/operators/expression/boolean/or.js",
+      "default": "./es/operators/expression/boolean/or.js"
+    },
+    "./operators/expression/boolean": {
+      "types": "./types/operators/expression/boolean/index.d.ts",
+      "node": "./lib/operators/expression/boolean/index.js",
+      "require": "./lib/operators/expression/boolean/index.js",
+      "es2015": "./es/operators/expression/boolean/index.js",
+      "default": "./es/operators/expression/boolean/index.js"
+    },
+    "./operators/expression/trignometry/sin": {
+      "types": "./types/operators/expression/trignometry/sin.d.ts",
+      "node": "./lib/operators/expression/trignometry/sin.js",
+      "require": "./lib/operators/expression/trignometry/sin.js",
+      "es2015": "./es/operators/expression/trignometry/sin.js",
+      "default": "./es/operators/expression/trignometry/sin.js"
+    },
+    "./operators/expression/trignometry/acos": {
+      "types": "./types/operators/expression/trignometry/acos.d.ts",
+      "node": "./lib/operators/expression/trignometry/acos.js",
+      "require": "./lib/operators/expression/trignometry/acos.js",
+      "es2015": "./es/operators/expression/trignometry/acos.js",
+      "default": "./es/operators/expression/trignometry/acos.js"
+    },
+    "./operators/expression/trignometry/atanh": {
+      "types": "./types/operators/expression/trignometry/atanh.d.ts",
+      "node": "./lib/operators/expression/trignometry/atanh.js",
+      "require": "./lib/operators/expression/trignometry/atanh.js",
+      "es2015": "./es/operators/expression/trignometry/atanh.js",
+      "default": "./es/operators/expression/trignometry/atanh.js"
+    },
+    "./operators/expression/trignometry/atan": {
+      "types": "./types/operators/expression/trignometry/atan.d.ts",
+      "node": "./lib/operators/expression/trignometry/atan.js",
+      "require": "./lib/operators/expression/trignometry/atan.js",
+      "es2015": "./es/operators/expression/trignometry/atan.js",
+      "default": "./es/operators/expression/trignometry/atan.js"
+    },
+    "./operators/expression/trignometry/sinh": {
+      "types": "./types/operators/expression/trignometry/sinh.d.ts",
+      "node": "./lib/operators/expression/trignometry/sinh.js",
+      "require": "./lib/operators/expression/trignometry/sinh.js",
+      "es2015": "./es/operators/expression/trignometry/sinh.js",
+      "default": "./es/operators/expression/trignometry/sinh.js"
+    },
+    "./operators/expression/trignometry/cosh": {
+      "types": "./types/operators/expression/trignometry/cosh.d.ts",
+      "node": "./lib/operators/expression/trignometry/cosh.js",
+      "require": "./lib/operators/expression/trignometry/cosh.js",
+      "es2015": "./es/operators/expression/trignometry/cosh.js",
+      "default": "./es/operators/expression/trignometry/cosh.js"
+    },
+    "./operators/expression/trignometry/tan": {
+      "types": "./types/operators/expression/trignometry/tan.d.ts",
+      "node": "./lib/operators/expression/trignometry/tan.js",
+      "require": "./lib/operators/expression/trignometry/tan.js",
+      "es2015": "./es/operators/expression/trignometry/tan.js",
+      "default": "./es/operators/expression/trignometry/tan.js"
+    },
+    "./operators/expression/trignometry/atan2": {
+      "types": "./types/operators/expression/trignometry/atan2.d.ts",
+      "node": "./lib/operators/expression/trignometry/atan2.js",
+      "require": "./lib/operators/expression/trignometry/atan2.js",
+      "es2015": "./es/operators/expression/trignometry/atan2.js",
+      "default": "./es/operators/expression/trignometry/atan2.js"
+    },
+    "./operators/expression/trignometry/cos": {
+      "types": "./types/operators/expression/trignometry/cos.d.ts",
+      "node": "./lib/operators/expression/trignometry/cos.js",
+      "require": "./lib/operators/expression/trignometry/cos.js",
+      "es2015": "./es/operators/expression/trignometry/cos.js",
+      "default": "./es/operators/expression/trignometry/cos.js"
+    },
+    "./operators/expression/trignometry/asin": {
+      "types": "./types/operators/expression/trignometry/asin.d.ts",
+      "node": "./lib/operators/expression/trignometry/asin.js",
+      "require": "./lib/operators/expression/trignometry/asin.js",
+      "es2015": "./es/operators/expression/trignometry/asin.js",
+      "default": "./es/operators/expression/trignometry/asin.js"
+    },
+    "./operators/expression/trignometry/degreesToRadians": {
+      "types": "./types/operators/expression/trignometry/degreesToRadians.d.ts",
+      "node": "./lib/operators/expression/trignometry/degreesToRadians.js",
+      "require": "./lib/operators/expression/trignometry/degreesToRadians.js",
+      "es2015": "./es/operators/expression/trignometry/degreesToRadians.js",
+      "default": "./es/operators/expression/trignometry/degreesToRadians.js"
+    },
+    "./operators/expression/trignometry": {
+      "types": "./types/operators/expression/trignometry/index.d.ts",
+      "node": "./lib/operators/expression/trignometry/index.js",
+      "require": "./lib/operators/expression/trignometry/index.js",
+      "es2015": "./es/operators/expression/trignometry/index.js",
+      "default": "./es/operators/expression/trignometry/index.js"
+    },
+    "./operators/expression/trignometry/acosh": {
+      "types": "./types/operators/expression/trignometry/acosh.d.ts",
+      "node": "./lib/operators/expression/trignometry/acosh.js",
+      "require": "./lib/operators/expression/trignometry/acosh.js",
+      "es2015": "./es/operators/expression/trignometry/acosh.js",
+      "default": "./es/operators/expression/trignometry/acosh.js"
+    },
+    "./operators/expression/trignometry/asinh": {
+      "types": "./types/operators/expression/trignometry/asinh.d.ts",
+      "node": "./lib/operators/expression/trignometry/asinh.js",
+      "require": "./lib/operators/expression/trignometry/asinh.js",
+      "es2015": "./es/operators/expression/trignometry/asinh.js",
+      "default": "./es/operators/expression/trignometry/asinh.js"
+    },
+    "./operators/expression/trignometry/radiansToDegrees": {
+      "types": "./types/operators/expression/trignometry/radiansToDegrees.d.ts",
+      "node": "./lib/operators/expression/trignometry/radiansToDegrees.js",
+      "require": "./lib/operators/expression/trignometry/radiansToDegrees.js",
+      "es2015": "./es/operators/expression/trignometry/radiansToDegrees.js",
+      "default": "./es/operators/expression/trignometry/radiansToDegrees.js"
+    },
+    "./operators/expression/arithmetic/mod": {
+      "types": "./types/operators/expression/arithmetic/mod.d.ts",
+      "node": "./lib/operators/expression/arithmetic/mod.js",
+      "require": "./lib/operators/expression/arithmetic/mod.js",
+      "es2015": "./es/operators/expression/arithmetic/mod.js",
+      "default": "./es/operators/expression/arithmetic/mod.js"
+    },
+    "./operators/expression/arithmetic/exp": {
+      "types": "./types/operators/expression/arithmetic/exp.d.ts",
+      "node": "./lib/operators/expression/arithmetic/exp.js",
+      "require": "./lib/operators/expression/arithmetic/exp.js",
+      "es2015": "./es/operators/expression/arithmetic/exp.js",
+      "default": "./es/operators/expression/arithmetic/exp.js"
+    },
+    "./operators/expression/arithmetic/round": {
+      "types": "./types/operators/expression/arithmetic/round.d.ts",
+      "node": "./lib/operators/expression/arithmetic/round.js",
+      "require": "./lib/operators/expression/arithmetic/round.js",
+      "es2015": "./es/operators/expression/arithmetic/round.js",
+      "default": "./es/operators/expression/arithmetic/round.js"
+    },
+    "./operators/expression/arithmetic/log10": {
+      "types": "./types/operators/expression/arithmetic/log10.d.ts",
+      "node": "./lib/operators/expression/arithmetic/log10.js",
+      "require": "./lib/operators/expression/arithmetic/log10.js",
+      "es2015": "./es/operators/expression/arithmetic/log10.js",
+      "default": "./es/operators/expression/arithmetic/log10.js"
+    },
+    "./operators/expression/arithmetic/ceil": {
+      "types": "./types/operators/expression/arithmetic/ceil.d.ts",
+      "node": "./lib/operators/expression/arithmetic/ceil.js",
+      "require": "./lib/operators/expression/arithmetic/ceil.js",
+      "es2015": "./es/operators/expression/arithmetic/ceil.js",
+      "default": "./es/operators/expression/arithmetic/ceil.js"
+    },
+    "./operators/expression/arithmetic/divide": {
+      "types": "./types/operators/expression/arithmetic/divide.d.ts",
+      "node": "./lib/operators/expression/arithmetic/divide.js",
+      "require": "./lib/operators/expression/arithmetic/divide.js",
+      "es2015": "./es/operators/expression/arithmetic/divide.js",
+      "default": "./es/operators/expression/arithmetic/divide.js"
+    },
+    "./operators/expression/arithmetic/floor": {
+      "types": "./types/operators/expression/arithmetic/floor.d.ts",
+      "node": "./lib/operators/expression/arithmetic/floor.js",
+      "require": "./lib/operators/expression/arithmetic/floor.js",
+      "es2015": "./es/operators/expression/arithmetic/floor.js",
+      "default": "./es/operators/expression/arithmetic/floor.js"
+    },
+    "./operators/expression/arithmetic/abs": {
+      "types": "./types/operators/expression/arithmetic/abs.d.ts",
+      "node": "./lib/operators/expression/arithmetic/abs.js",
+      "require": "./lib/operators/expression/arithmetic/abs.js",
+      "es2015": "./es/operators/expression/arithmetic/abs.js",
+      "default": "./es/operators/expression/arithmetic/abs.js"
+    },
+    "./operators/expression/arithmetic/ln": {
+      "types": "./types/operators/expression/arithmetic/ln.d.ts",
+      "node": "./lib/operators/expression/arithmetic/ln.js",
+      "require": "./lib/operators/expression/arithmetic/ln.js",
+      "es2015": "./es/operators/expression/arithmetic/ln.js",
+      "default": "./es/operators/expression/arithmetic/ln.js"
+    },
+    "./operators/expression/arithmetic/multiply": {
+      "types": "./types/operators/expression/arithmetic/multiply.d.ts",
+      "node": "./lib/operators/expression/arithmetic/multiply.js",
+      "require": "./lib/operators/expression/arithmetic/multiply.js",
+      "es2015": "./es/operators/expression/arithmetic/multiply.js",
+      "default": "./es/operators/expression/arithmetic/multiply.js"
+    },
+    "./operators/expression/arithmetic/sqrt": {
+      "types": "./types/operators/expression/arithmetic/sqrt.d.ts",
+      "node": "./lib/operators/expression/arithmetic/sqrt.js",
+      "require": "./lib/operators/expression/arithmetic/sqrt.js",
+      "es2015": "./es/operators/expression/arithmetic/sqrt.js",
+      "default": "./es/operators/expression/arithmetic/sqrt.js"
+    },
+    "./operators/expression/arithmetic/log": {
+      "types": "./types/operators/expression/arithmetic/log.d.ts",
+      "node": "./lib/operators/expression/arithmetic/log.js",
+      "require": "./lib/operators/expression/arithmetic/log.js",
+      "es2015": "./es/operators/expression/arithmetic/log.js",
+      "default": "./es/operators/expression/arithmetic/log.js"
+    },
+    "./operators/expression/arithmetic": {
+      "types": "./types/operators/expression/arithmetic/index.d.ts",
+      "node": "./lib/operators/expression/arithmetic/index.js",
+      "require": "./lib/operators/expression/arithmetic/index.js",
+      "es2015": "./es/operators/expression/arithmetic/index.js",
+      "default": "./es/operators/expression/arithmetic/index.js"
+    },
+    "./operators/expression/arithmetic/subtract": {
+      "types": "./types/operators/expression/arithmetic/subtract.d.ts",
+      "node": "./lib/operators/expression/arithmetic/subtract.js",
+      "require": "./lib/operators/expression/arithmetic/subtract.js",
+      "es2015": "./es/operators/expression/arithmetic/subtract.js",
+      "default": "./es/operators/expression/arithmetic/subtract.js"
+    },
+    "./operators/expression/arithmetic/add": {
+      "types": "./types/operators/expression/arithmetic/add.d.ts",
+      "node": "./lib/operators/expression/arithmetic/add.js",
+      "require": "./lib/operators/expression/arithmetic/add.js",
+      "es2015": "./es/operators/expression/arithmetic/add.js",
+      "default": "./es/operators/expression/arithmetic/add.js"
+    },
+    "./operators/expression/arithmetic/trunc": {
+      "types": "./types/operators/expression/arithmetic/trunc.d.ts",
+      "node": "./lib/operators/expression/arithmetic/trunc.js",
+      "require": "./lib/operators/expression/arithmetic/trunc.js",
+      "es2015": "./es/operators/expression/arithmetic/trunc.js",
+      "default": "./es/operators/expression/arithmetic/trunc.js"
+    },
+    "./operators/expression/arithmetic/pow": {
+      "types": "./types/operators/expression/arithmetic/pow.d.ts",
+      "node": "./lib/operators/expression/arithmetic/pow.js",
+      "require": "./lib/operators/expression/arithmetic/pow.js",
+      "es2015": "./es/operators/expression/arithmetic/pow.js",
+      "default": "./es/operators/expression/arithmetic/pow.js"
+    },
+    "./operators/expression/comparison/cmp": {
+      "types": "./types/operators/expression/comparison/cmp.d.ts",
+      "node": "./lib/operators/expression/comparison/cmp.js",
+      "require": "./lib/operators/expression/comparison/cmp.js",
+      "es2015": "./es/operators/expression/comparison/cmp.js",
+      "default": "./es/operators/expression/comparison/cmp.js"
+    },
+    "./operators/expression/comparison/lt": {
+      "types": "./types/operators/expression/comparison/lt.d.ts",
+      "node": "./lib/operators/expression/comparison/lt.js",
+      "require": "./lib/operators/expression/comparison/lt.js",
+      "es2015": "./es/operators/expression/comparison/lt.js",
+      "default": "./es/operators/expression/comparison/lt.js"
+    },
+    "./operators/expression/comparison/gte": {
+      "types": "./types/operators/expression/comparison/gte.d.ts",
+      "node": "./lib/operators/expression/comparison/gte.js",
+      "require": "./lib/operators/expression/comparison/gte.js",
+      "es2015": "./es/operators/expression/comparison/gte.js",
+      "default": "./es/operators/expression/comparison/gte.js"
+    },
+    "./operators/expression/comparison/eq": {
+      "types": "./types/operators/expression/comparison/eq.d.ts",
+      "node": "./lib/operators/expression/comparison/eq.js",
+      "require": "./lib/operators/expression/comparison/eq.js",
+      "es2015": "./es/operators/expression/comparison/eq.js",
+      "default": "./es/operators/expression/comparison/eq.js"
+    },
+    "./operators/expression/comparison/gt": {
+      "types": "./types/operators/expression/comparison/gt.d.ts",
+      "node": "./lib/operators/expression/comparison/gt.js",
+      "require": "./lib/operators/expression/comparison/gt.js",
+      "es2015": "./es/operators/expression/comparison/gt.js",
+      "default": "./es/operators/expression/comparison/gt.js"
+    },
+    "./operators/expression/comparison": {
+      "types": "./types/operators/expression/comparison/index.d.ts",
+      "node": "./lib/operators/expression/comparison/index.js",
+      "require": "./lib/operators/expression/comparison/index.js",
+      "es2015": "./es/operators/expression/comparison/index.js",
+      "default": "./es/operators/expression/comparison/index.js"
+    },
+    "./operators/expression/comparison/ne": {
+      "types": "./types/operators/expression/comparison/ne.d.ts",
+      "node": "./lib/operators/expression/comparison/ne.js",
+      "require": "./lib/operators/expression/comparison/ne.js",
+      "es2015": "./es/operators/expression/comparison/ne.js",
+      "default": "./es/operators/expression/comparison/ne.js"
+    },
+    "./operators/expression/comparison/lte": {
+      "types": "./types/operators/expression/comparison/lte.d.ts",
+      "node": "./lib/operators/expression/comparison/lte.js",
+      "require": "./lib/operators/expression/comparison/lte.js",
+      "es2015": "./es/operators/expression/comparison/lte.js",
+      "default": "./es/operators/expression/comparison/lte.js"
+    },
+    "./operators/expression/string/strLenBytes": {
+      "types": "./types/operators/expression/string/strLenBytes.d.ts",
+      "node": "./lib/operators/expression/string/strLenBytes.js",
+      "require": "./lib/operators/expression/string/strLenBytes.js",
+      "es2015": "./es/operators/expression/string/strLenBytes.js",
+      "default": "./es/operators/expression/string/strLenBytes.js"
+    },
+    "./operators/expression/string/regexMatch": {
+      "types": "./types/operators/expression/string/regexMatch.d.ts",
+      "node": "./lib/operators/expression/string/regexMatch.js",
+      "require": "./lib/operators/expression/string/regexMatch.js",
+      "es2015": "./es/operators/expression/string/regexMatch.js",
+      "default": "./es/operators/expression/string/regexMatch.js"
+    },
+    "./operators/expression/string/replaceAll": {
+      "types": "./types/operators/expression/string/replaceAll.d.ts",
+      "node": "./lib/operators/expression/string/replaceAll.js",
+      "require": "./lib/operators/expression/string/replaceAll.js",
+      "es2015": "./es/operators/expression/string/replaceAll.js",
+      "default": "./es/operators/expression/string/replaceAll.js"
+    },
+    "./operators/expression/string/strLenCP": {
+      "types": "./types/operators/expression/string/strLenCP.d.ts",
+      "node": "./lib/operators/expression/string/strLenCP.js",
+      "require": "./lib/operators/expression/string/strLenCP.js",
+      "es2015": "./es/operators/expression/string/strLenCP.js",
+      "default": "./es/operators/expression/string/strLenCP.js"
+    },
+    "./operators/expression/string/strcasecmp": {
+      "types": "./types/operators/expression/string/strcasecmp.d.ts",
+      "node": "./lib/operators/expression/string/strcasecmp.js",
+      "require": "./lib/operators/expression/string/strcasecmp.js",
+      "es2015": "./es/operators/expression/string/strcasecmp.js",
+      "default": "./es/operators/expression/string/strcasecmp.js"
+    },
+    "./operators/expression/string/replaceOne": {
+      "types": "./types/operators/expression/string/replaceOne.d.ts",
+      "node": "./lib/operators/expression/string/replaceOne.js",
+      "require": "./lib/operators/expression/string/replaceOne.js",
+      "es2015": "./es/operators/expression/string/replaceOne.js",
+      "default": "./es/operators/expression/string/replaceOne.js"
+    },
+    "./operators/expression/string/split": {
+      "types": "./types/operators/expression/string/split.d.ts",
+      "node": "./lib/operators/expression/string/split.js",
+      "require": "./lib/operators/expression/string/split.js",
+      "es2015": "./es/operators/expression/string/split.js",
+      "default": "./es/operators/expression/string/split.js"
+    },
+    "./operators/expression/string/substrCP": {
+      "types": "./types/operators/expression/string/substrCP.d.ts",
+      "node": "./lib/operators/expression/string/substrCP.js",
+      "require": "./lib/operators/expression/string/substrCP.js",
+      "es2015": "./es/operators/expression/string/substrCP.js",
+      "default": "./es/operators/expression/string/substrCP.js"
+    },
+    "./operators/expression/string/toUpper": {
+      "types": "./types/operators/expression/string/toUpper.d.ts",
+      "node": "./lib/operators/expression/string/toUpper.js",
+      "require": "./lib/operators/expression/string/toUpper.js",
+      "es2015": "./es/operators/expression/string/toUpper.js",
+      "default": "./es/operators/expression/string/toUpper.js"
+    },
+    "./operators/expression/string/rtrim": {
+      "types": "./types/operators/expression/string/rtrim.d.ts",
+      "node": "./lib/operators/expression/string/rtrim.js",
+      "require": "./lib/operators/expression/string/rtrim.js",
+      "es2015": "./es/operators/expression/string/rtrim.js",
+      "default": "./es/operators/expression/string/rtrim.js"
+    },
+    "./operators/expression/string/trim": {
+      "types": "./types/operators/expression/string/trim.d.ts",
+      "node": "./lib/operators/expression/string/trim.js",
+      "require": "./lib/operators/expression/string/trim.js",
+      "es2015": "./es/operators/expression/string/trim.js",
+      "default": "./es/operators/expression/string/trim.js"
+    },
+    "./operators/expression/string/substr": {
+      "types": "./types/operators/expression/string/substr.d.ts",
+      "node": "./lib/operators/expression/string/substr.js",
+      "require": "./lib/operators/expression/string/substr.js",
+      "es2015": "./es/operators/expression/string/substr.js",
+      "default": "./es/operators/expression/string/substr.js"
+    },
+    "./operators/expression/string/indexOfBytes": {
+      "types": "./types/operators/expression/string/indexOfBytes.d.ts",
+      "node": "./lib/operators/expression/string/indexOfBytes.js",
+      "require": "./lib/operators/expression/string/indexOfBytes.js",
+      "es2015": "./es/operators/expression/string/indexOfBytes.js",
+      "default": "./es/operators/expression/string/indexOfBytes.js"
+    },
+    "./operators/expression/string/toLower": {
+      "types": "./types/operators/expression/string/toLower.d.ts",
+      "node": "./lib/operators/expression/string/toLower.js",
+      "require": "./lib/operators/expression/string/toLower.js",
+      "es2015": "./es/operators/expression/string/toLower.js",
+      "default": "./es/operators/expression/string/toLower.js"
+    },
+    "./operators/expression/string/concat": {
+      "types": "./types/operators/expression/string/concat.d.ts",
+      "node": "./lib/operators/expression/string/concat.js",
+      "require": "./lib/operators/expression/string/concat.js",
+      "es2015": "./es/operators/expression/string/concat.js",
+      "default": "./es/operators/expression/string/concat.js"
+    },
+    "./operators/expression/string": {
+      "types": "./types/operators/expression/string/index.d.ts",
+      "node": "./lib/operators/expression/string/index.js",
+      "require": "./lib/operators/expression/string/index.js",
+      "es2015": "./es/operators/expression/string/index.js",
+      "default": "./es/operators/expression/string/index.js"
+    },
+    "./operators/expression/string/substrBytes": {
+      "types": "./types/operators/expression/string/substrBytes.d.ts",
+      "node": "./lib/operators/expression/string/substrBytes.js",
+      "require": "./lib/operators/expression/string/substrBytes.js",
+      "es2015": "./es/operators/expression/string/substrBytes.js",
+      "default": "./es/operators/expression/string/substrBytes.js"
+    },
+    "./operators/expression/string/regexFindAll": {
+      "types": "./types/operators/expression/string/regexFindAll.d.ts",
+      "node": "./lib/operators/expression/string/regexFindAll.js",
+      "require": "./lib/operators/expression/string/regexFindAll.js",
+      "es2015": "./es/operators/expression/string/regexFindAll.js",
+      "default": "./es/operators/expression/string/regexFindAll.js"
+    },
+    "./operators/expression/string/ltrim": {
+      "types": "./types/operators/expression/string/ltrim.d.ts",
+      "node": "./lib/operators/expression/string/ltrim.js",
+      "require": "./lib/operators/expression/string/ltrim.js",
+      "es2015": "./es/operators/expression/string/ltrim.js",
+      "default": "./es/operators/expression/string/ltrim.js"
+    },
+    "./operators/expression/string/regexFind": {
+      "types": "./types/operators/expression/string/regexFind.d.ts",
+      "node": "./lib/operators/expression/string/regexFind.js",
+      "require": "./lib/operators/expression/string/regexFind.js",
+      "es2015": "./es/operators/expression/string/regexFind.js",
+      "default": "./es/operators/expression/string/regexFind.js"
+    },
+    "./operators/expression": {
+      "types": "./types/operators/expression/index.d.ts",
+      "node": "./lib/operators/expression/index.js",
+      "require": "./lib/operators/expression/index.js",
+      "es2015": "./es/operators/expression/index.js",
+      "default": "./es/operators/expression/index.js"
+    },
+    "./operators/expression/literal": {
+      "types": "./types/operators/expression/literal.d.ts",
+      "node": "./lib/operators/expression/literal.js",
+      "require": "./lib/operators/expression/literal.js",
+      "es2015": "./es/operators/expression/literal.js",
+      "default": "./es/operators/expression/literal.js"
+    },
+    "./operators/expression/set/setIntersection": {
+      "types": "./types/operators/expression/set/setIntersection.d.ts",
+      "node": "./lib/operators/expression/set/setIntersection.js",
+      "require": "./lib/operators/expression/set/setIntersection.js",
+      "es2015": "./es/operators/expression/set/setIntersection.js",
+      "default": "./es/operators/expression/set/setIntersection.js"
+    },
+    "./operators/expression/set/setUnion": {
+      "types": "./types/operators/expression/set/setUnion.d.ts",
+      "node": "./lib/operators/expression/set/setUnion.js",
+      "require": "./lib/operators/expression/set/setUnion.js",
+      "es2015": "./es/operators/expression/set/setUnion.js",
+      "default": "./es/operators/expression/set/setUnion.js"
+    },
+    "./operators/expression/set/allElementsTrue": {
+      "types": "./types/operators/expression/set/allElementsTrue.d.ts",
+      "node": "./lib/operators/expression/set/allElementsTrue.js",
+      "require": "./lib/operators/expression/set/allElementsTrue.js",
+      "es2015": "./es/operators/expression/set/allElementsTrue.js",
+      "default": "./es/operators/expression/set/allElementsTrue.js"
+    },
+    "./operators/expression/set/setIsSubset": {
+      "types": "./types/operators/expression/set/setIsSubset.d.ts",
+      "node": "./lib/operators/expression/set/setIsSubset.js",
+      "require": "./lib/operators/expression/set/setIsSubset.js",
+      "es2015": "./es/operators/expression/set/setIsSubset.js",
+      "default": "./es/operators/expression/set/setIsSubset.js"
+    },
+    "./operators/expression/set/anyElementTrue": {
+      "types": "./types/operators/expression/set/anyElementTrue.d.ts",
+      "node": "./lib/operators/expression/set/anyElementTrue.js",
+      "require": "./lib/operators/expression/set/anyElementTrue.js",
+      "es2015": "./es/operators/expression/set/anyElementTrue.js",
+      "default": "./es/operators/expression/set/anyElementTrue.js"
+    },
+    "./operators/expression/set/setDifference": {
+      "types": "./types/operators/expression/set/setDifference.d.ts",
+      "node": "./lib/operators/expression/set/setDifference.js",
+      "require": "./lib/operators/expression/set/setDifference.js",
+      "es2015": "./es/operators/expression/set/setDifference.js",
+      "default": "./es/operators/expression/set/setDifference.js"
+    },
+    "./operators/expression/set": {
+      "types": "./types/operators/expression/set/index.d.ts",
+      "node": "./lib/operators/expression/set/index.js",
+      "require": "./lib/operators/expression/set/index.js",
+      "es2015": "./es/operators/expression/set/index.js",
+      "default": "./es/operators/expression/set/index.js"
+    },
+    "./operators/expression/set/setEquals": {
+      "types": "./types/operators/expression/set/setEquals.d.ts",
+      "node": "./lib/operators/expression/set/setEquals.js",
+      "require": "./lib/operators/expression/set/setEquals.js",
+      "es2015": "./es/operators/expression/set/setEquals.js",
+      "default": "./es/operators/expression/set/setEquals.js"
+    },
+    "./operators/expression/custom/function": {
+      "types": "./types/operators/expression/custom/function.d.ts",
+      "node": "./lib/operators/expression/custom/function.js",
+      "require": "./lib/operators/expression/custom/function.js",
+      "es2015": "./es/operators/expression/custom/function.js",
+      "default": "./es/operators/expression/custom/function.js"
+    },
+    "./operators/expression/custom": {
+      "types": "./types/operators/expression/custom/index.d.ts",
+      "node": "./lib/operators/expression/custom/index.js",
+      "require": "./lib/operators/expression/custom/index.js",
+      "es2015": "./es/operators/expression/custom/index.js",
+      "default": "./es/operators/expression/custom/index.js"
+    },
+    "./operators/query/array/elemMatch": {
+      "types": "./types/operators/query/array/elemMatch.d.ts",
+      "node": "./lib/operators/query/array/elemMatch.js",
+      "require": "./lib/operators/query/array/elemMatch.js",
+      "es2015": "./es/operators/query/array/elemMatch.js",
+      "default": "./es/operators/query/array/elemMatch.js"
+    },
+    "./operators/query/array/size": {
+      "types": "./types/operators/query/array/size.d.ts",
+      "node": "./lib/operators/query/array/size.js",
+      "require": "./lib/operators/query/array/size.js",
+      "es2015": "./es/operators/query/array/size.js",
+      "default": "./es/operators/query/array/size.js"
+    },
+    "./operators/query/array/all": {
+      "types": "./types/operators/query/array/all.d.ts",
+      "node": "./lib/operators/query/array/all.js",
+      "require": "./lib/operators/query/array/all.js",
+      "es2015": "./es/operators/query/array/all.js",
+      "default": "./es/operators/query/array/all.js"
+    },
+    "./operators/query/array": {
+      "types": "./types/operators/query/array/index.d.ts",
+      "node": "./lib/operators/query/array/index.js",
+      "require": "./lib/operators/query/array/index.js",
+      "es2015": "./es/operators/query/array/index.js",
+      "default": "./es/operators/query/array/index.js"
+    },
+    "./operators/query/element/type": {
+      "types": "./types/operators/query/element/type.d.ts",
+      "node": "./lib/operators/query/element/type.js",
+      "require": "./lib/operators/query/element/type.js",
+      "es2015": "./es/operators/query/element/type.js",
+      "default": "./es/operators/query/element/type.js"
+    },
+    "./operators/query/element": {
+      "types": "./types/operators/query/element/index.d.ts",
+      "node": "./lib/operators/query/element/index.js",
+      "require": "./lib/operators/query/element/index.js",
+      "es2015": "./es/operators/query/element/index.js",
+      "default": "./es/operators/query/element/index.js"
+    },
+    "./operators/query/element/exists": {
+      "types": "./types/operators/query/element/exists.d.ts",
+      "node": "./lib/operators/query/element/exists.js",
+      "require": "./lib/operators/query/element/exists.js",
+      "es2015": "./es/operators/query/element/exists.js",
+      "default": "./es/operators/query/element/exists.js"
+    },
+    "./operators/query/logical/and": {
+      "types": "./types/operators/query/logical/and.d.ts",
+      "node": "./lib/operators/query/logical/and.js",
+      "require": "./lib/operators/query/logical/and.js",
+      "es2015": "./es/operators/query/logical/and.js",
+      "default": "./es/operators/query/logical/and.js"
+    },
+    "./operators/query/logical/not": {
+      "types": "./types/operators/query/logical/not.d.ts",
+      "node": "./lib/operators/query/logical/not.js",
+      "require": "./lib/operators/query/logical/not.js",
+      "es2015": "./es/operators/query/logical/not.js",
+      "default": "./es/operators/query/logical/not.js"
+    },
+    "./operators/query/logical/or": {
+      "types": "./types/operators/query/logical/or.d.ts",
+      "node": "./lib/operators/query/logical/or.js",
+      "require": "./lib/operators/query/logical/or.js",
+      "es2015": "./es/operators/query/logical/or.js",
+      "default": "./es/operators/query/logical/or.js"
+    },
+    "./operators/query/logical/nor": {
+      "types": "./types/operators/query/logical/nor.d.ts",
+      "node": "./lib/operators/query/logical/nor.js",
+      "require": "./lib/operators/query/logical/nor.js",
+      "es2015": "./es/operators/query/logical/nor.js",
+      "default": "./es/operators/query/logical/nor.js"
+    },
+    "./operators/query/logical": {
+      "types": "./types/operators/query/logical/index.d.ts",
+      "node": "./lib/operators/query/logical/index.js",
+      "require": "./lib/operators/query/logical/index.js",
+      "es2015": "./es/operators/query/logical/index.js",
+      "default": "./es/operators/query/logical/index.js"
+    },
+    "./operators/query/evaluation/expr": {
+      "types": "./types/operators/query/evaluation/expr.d.ts",
+      "node": "./lib/operators/query/evaluation/expr.js",
+      "require": "./lib/operators/query/evaluation/expr.js",
+      "es2015": "./es/operators/query/evaluation/expr.js",
+      "default": "./es/operators/query/evaluation/expr.js"
+    },
+    "./operators/query/evaluation/regex": {
+      "types": "./types/operators/query/evaluation/regex.d.ts",
+      "node": "./lib/operators/query/evaluation/regex.js",
+      "require": "./lib/operators/query/evaluation/regex.js",
+      "es2015": "./es/operators/query/evaluation/regex.js",
+      "default": "./es/operators/query/evaluation/regex.js"
+    },
+    "./operators/query/evaluation/mod": {
+      "types": "./types/operators/query/evaluation/mod.d.ts",
+      "node": "./lib/operators/query/evaluation/mod.js",
+      "require": "./lib/operators/query/evaluation/mod.js",
+      "es2015": "./es/operators/query/evaluation/mod.js",
+      "default": "./es/operators/query/evaluation/mod.js"
+    },
+    "./operators/query/evaluation/jsonSchema": {
+      "types": "./types/operators/query/evaluation/jsonSchema.d.ts",
+      "node": "./lib/operators/query/evaluation/jsonSchema.js",
+      "require": "./lib/operators/query/evaluation/jsonSchema.js",
+      "es2015": "./es/operators/query/evaluation/jsonSchema.js",
+      "default": "./es/operators/query/evaluation/jsonSchema.js"
+    },
+    "./operators/query/evaluation/where": {
+      "types": "./types/operators/query/evaluation/where.d.ts",
+      "node": "./lib/operators/query/evaluation/where.js",
+      "require": "./lib/operators/query/evaluation/where.js",
+      "es2015": "./es/operators/query/evaluation/where.js",
+      "default": "./es/operators/query/evaluation/where.js"
+    },
+    "./operators/query/evaluation": {
+      "types": "./types/operators/query/evaluation/index.d.ts",
+      "node": "./lib/operators/query/evaluation/index.js",
+      "require": "./lib/operators/query/evaluation/index.js",
+      "es2015": "./es/operators/query/evaluation/index.js",
+      "default": "./es/operators/query/evaluation/index.js"
+    },
+    "./operators/query/comparison/lt": {
+      "types": "./types/operators/query/comparison/lt.d.ts",
+      "node": "./lib/operators/query/comparison/lt.js",
+      "require": "./lib/operators/query/comparison/lt.js",
+      "es2015": "./es/operators/query/comparison/lt.js",
+      "default": "./es/operators/query/comparison/lt.js"
+    },
+    "./operators/query/comparison/nin": {
+      "types": "./types/operators/query/comparison/nin.d.ts",
+      "node": "./lib/operators/query/comparison/nin.js",
+      "require": "./lib/operators/query/comparison/nin.js",
+      "es2015": "./es/operators/query/comparison/nin.js",
+      "default": "./es/operators/query/comparison/nin.js"
+    },
+    "./operators/query/comparison/in": {
+      "types": "./types/operators/query/comparison/in.d.ts",
+      "node": "./lib/operators/query/comparison/in.js",
+      "require": "./lib/operators/query/comparison/in.js",
+      "es2015": "./es/operators/query/comparison/in.js",
+      "default": "./es/operators/query/comparison/in.js"
+    },
+    "./operators/query/comparison/gte": {
+      "types": "./types/operators/query/comparison/gte.d.ts",
+      "node": "./lib/operators/query/comparison/gte.js",
+      "require": "./lib/operators/query/comparison/gte.js",
+      "es2015": "./es/operators/query/comparison/gte.js",
+      "default": "./es/operators/query/comparison/gte.js"
+    },
+    "./operators/query/comparison/eq": {
+      "types": "./types/operators/query/comparison/eq.d.ts",
+      "node": "./lib/operators/query/comparison/eq.js",
+      "require": "./lib/operators/query/comparison/eq.js",
+      "es2015": "./es/operators/query/comparison/eq.js",
+      "default": "./es/operators/query/comparison/eq.js"
+    },
+    "./operators/query/comparison/gt": {
+      "types": "./types/operators/query/comparison/gt.d.ts",
+      "node": "./lib/operators/query/comparison/gt.js",
+      "require": "./lib/operators/query/comparison/gt.js",
+      "es2015": "./es/operators/query/comparison/gt.js",
+      "default": "./es/operators/query/comparison/gt.js"
+    },
+    "./operators/query/comparison": {
+      "types": "./types/operators/query/comparison/index.d.ts",
+      "node": "./lib/operators/query/comparison/index.js",
+      "require": "./lib/operators/query/comparison/index.js",
+      "es2015": "./es/operators/query/comparison/index.js",
+      "default": "./es/operators/query/comparison/index.js"
+    },
+    "./operators/query/comparison/ne": {
+      "types": "./types/operators/query/comparison/ne.d.ts",
+      "node": "./lib/operators/query/comparison/ne.js",
+      "require": "./lib/operators/query/comparison/ne.js",
+      "es2015": "./es/operators/query/comparison/ne.js",
+      "default": "./es/operators/query/comparison/ne.js"
+    },
+    "./operators/query/comparison/lte": {
+      "types": "./types/operators/query/comparison/lte.d.ts",
+      "node": "./lib/operators/query/comparison/lte.js",
+      "require": "./lib/operators/query/comparison/lte.js",
+      "es2015": "./es/operators/query/comparison/lte.js",
+      "default": "./es/operators/query/comparison/lte.js"
+    },
+    "./operators/query": {
+      "types": "./types/operators/query/index.d.ts",
+      "node": "./lib/operators/query/index.js",
+      "require": "./lib/operators/query/index.js",
+      "es2015": "./es/operators/query/index.js",
+      "default": "./es/operators/query/index.js"
+    },
+    "./operators/query/bitwise/bitsAnySet": {
+      "types": "./types/operators/query/bitwise/bitsAnySet.d.ts",
+      "node": "./lib/operators/query/bitwise/bitsAnySet.js",
+      "require": "./lib/operators/query/bitwise/bitsAnySet.js",
+      "es2015": "./es/operators/query/bitwise/bitsAnySet.js",
+      "default": "./es/operators/query/bitwise/bitsAnySet.js"
+    },
+    "./operators/query/bitwise/bitsAllClear": {
+      "types": "./types/operators/query/bitwise/bitsAllClear.d.ts",
+      "node": "./lib/operators/query/bitwise/bitsAllClear.js",
+      "require": "./lib/operators/query/bitwise/bitsAllClear.js",
+      "es2015": "./es/operators/query/bitwise/bitsAllClear.js",
+      "default": "./es/operators/query/bitwise/bitsAllClear.js"
+    },
+    "./operators/query/bitwise/bitsAnyClear": {
+      "types": "./types/operators/query/bitwise/bitsAnyClear.d.ts",
+      "node": "./lib/operators/query/bitwise/bitsAnyClear.js",
+      "require": "./lib/operators/query/bitwise/bitsAnyClear.js",
+      "es2015": "./es/operators/query/bitwise/bitsAnyClear.js",
+      "default": "./es/operators/query/bitwise/bitsAnyClear.js"
+    },
+    "./operators/query/bitwise/bitsAllSet": {
+      "types": "./types/operators/query/bitwise/bitsAllSet.d.ts",
+      "node": "./lib/operators/query/bitwise/bitsAllSet.js",
+      "require": "./lib/operators/query/bitwise/bitsAllSet.js",
+      "es2015": "./es/operators/query/bitwise/bitsAllSet.js",
+      "default": "./es/operators/query/bitwise/bitsAllSet.js"
+    },
+    "./operators/query/bitwise": {
+      "types": "./types/operators/query/bitwise/index.d.ts",
+      "node": "./lib/operators/query/bitwise/index.js",
+      "require": "./lib/operators/query/bitwise/index.js",
+      "es2015": "./es/operators/query/bitwise/index.js",
+      "default": "./es/operators/query/bitwise/index.js"
+    },
+    "./operators/projection/elemMatch": {
+      "types": "./types/operators/projection/elemMatch.d.ts",
+      "node": "./lib/operators/projection/elemMatch.js",
+      "require": "./lib/operators/projection/elemMatch.js",
+      "es2015": "./es/operators/projection/elemMatch.js",
+      "default": "./es/operators/projection/elemMatch.js"
+    },
+    "./operators/projection": {
+      "types": "./types/operators/projection/index.d.ts",
+      "node": "./lib/operators/projection/index.js",
+      "require": "./lib/operators/projection/index.js",
+      "es2015": "./es/operators/projection/index.js",
+      "default": "./es/operators/projection/index.js"
+    },
+    "./operators/projection/slice": {
+      "types": "./types/operators/projection/slice.d.ts",
+      "node": "./lib/operators/projection/slice.js",
+      "require": "./lib/operators/projection/slice.js",
+      "es2015": "./es/operators/projection/slice.js",
+      "default": "./es/operators/projection/slice.js"
+    },
+    "./types": {
+      "types": "./types/types.d.ts",
+      "node": "./lib/types.js",
+      "require": "./lib/types.js",
+      "es2015": "./es/types.js",
+      "default": "./es/types.js"
+    },
+    "./core": {
+      "types": "./types/core.d.ts",
+      "node": "./lib/core.js",
+      "require": "./lib/core.js",
+      "es2015": "./es/core.js",
+      "default": "./es/core.js"
+    },
+    "./util": {
+      "types": "./types/util.d.ts",
+      "node": "./lib/util.js",
+      "require": "./lib/util.js",
+      "es2015": "./es/util.js",
+      "default": "./es/util.js"
+    },
+    "./aggregator": {
+      "types": "./types/aggregator.d.ts",
+      "node": "./lib/aggregator.js",
+      "require": "./lib/aggregator.js",
+      "es2015": "./es/aggregator.js",
+      "default": "./es/aggregator.js"
+    },
+    ".": {
+      "types": "./types/index.d.ts",
+      "node": "./lib/index.js",
+      "require": "./lib/index.js",
+      "es2015": "./es/index.js",
+      "default": "./es/index.js"
+    },
+    "./query": {
+      "types": "./types/query.d.ts",
+      "node": "./lib/query.js",
+      "require": "./lib/query.js",
+      "es2015": "./es/query.js",
+      "default": "./es/query.js"
+    }
+  }
+}

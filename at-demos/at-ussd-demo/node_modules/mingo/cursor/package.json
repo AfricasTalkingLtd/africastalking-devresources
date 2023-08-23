@@ -1,0 +1,8 @@
+{
+  "main": "../lib/cursor.js",
+  "module": "../es/cursor.js",
+  "es2015": "../es/cursor.js",
+  "jsnext:main": "../es/cursor.js",
+  "types": "../types/cursor.d.ts",
+  "sideEffects": false
+}

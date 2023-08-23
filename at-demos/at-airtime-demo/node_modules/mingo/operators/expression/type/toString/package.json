@@ -1,0 +1,8 @@
+{
+  "main": "../../../../lib/operators/expression/type/toString.js",
+  "module": "../../../../es/operators/expression/type/toString.js",
+  "es2015": "../../../../es/operators/expression/type/toString.js",
+  "jsnext:main": "../../../../es/operators/expression/type/toString.js",
+  "types": "../../../../types/operators/expression/type/toString.d.ts",
+  "sideEffects": false
+}

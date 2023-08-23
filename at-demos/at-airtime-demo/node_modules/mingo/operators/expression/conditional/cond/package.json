@@ -1,0 +1,8 @@
+{
+  "main": "../../../../lib/operators/expression/conditional/cond.js",
+  "module": "../../../../es/operators/expression/conditional/cond.js",
+  "es2015": "../../../../es/operators/expression/conditional/cond.js",
+  "jsnext:main": "../../../../es/operators/expression/conditional/cond.js",
+  "types": "../../../../types/operators/expression/conditional/cond.d.ts",
+  "sideEffects": false
+}

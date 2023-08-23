@@ -1,0 +1,8 @@
+{
+  "main": "../../../../lib/operators/expression/type/toBool.js",
+  "module": "../../../../es/operators/expression/type/toBool.js",
+  "es2015": "../../../../es/operators/expression/type/toBool.js",
+  "jsnext:main": "../../../../es/operators/expression/type/toBool.js",
+  "types": "../../../../types/operators/expression/type/toBool.d.ts",
+  "sideEffects": false
+}

@@ -1,0 +1,8 @@
+{
+  "main": "../../../../lib/operators/expression/string/strLenBytes.js",
+  "module": "../../../../es/operators/expression/string/strLenBytes.js",
+  "es2015": "../../../../es/operators/expression/string/strLenBytes.js",
+  "jsnext:main": "../../../../es/operators/expression/string/strLenBytes.js",
+  "types": "../../../../types/operators/expression/string/strLenBytes.d.ts",
+  "sideEffects": false
+}

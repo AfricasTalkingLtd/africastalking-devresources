@@ -1,0 +1,8 @@
+{
+  "main": "../../../lib/operators/pipeline/skip.js",
+  "module": "../../../es/operators/pipeline/skip.js",
+  "es2015": "../../../es/operators/pipeline/skip.js",
+  "jsnext:main": "../../../es/operators/pipeline/skip.js",
+  "types": "../../../types/operators/pipeline/skip.d.ts",
+  "sideEffects": false
+}

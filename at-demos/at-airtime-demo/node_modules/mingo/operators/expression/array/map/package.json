@@ -1,0 +1,8 @@
+{
+  "main": "../../../../lib/operators/expression/array/map.js",
+  "module": "../../../../es/operators/expression/array/map.js",
+  "es2015": "../../../../es/operators/expression/array/map.js",
+  "jsnext:main": "../../../../es/operators/expression/array/map.js",
+  "types": "../../../../types/operators/expression/array/map.d.ts",
+  "sideEffects": false
+}

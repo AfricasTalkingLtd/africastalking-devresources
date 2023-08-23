@@ -1,0 +1,8 @@
+{
+  "main": "../../../../lib/operators/expression/array/reduce.js",
+  "module": "../../../../es/operators/expression/array/reduce.js",
+  "es2015": "../../../../es/operators/expression/array/reduce.js",
+  "jsnext:main": "../../../../es/operators/expression/array/reduce.js",
+  "types": "../../../../types/operators/expression/array/reduce.d.ts",
+  "sideEffects": false
+}

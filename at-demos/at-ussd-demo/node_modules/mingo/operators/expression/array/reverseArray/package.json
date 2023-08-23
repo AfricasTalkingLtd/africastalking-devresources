@@ -1,0 +1,8 @@
+{
+  "main": "../../../../lib/operators/expression/array/reverseArray.js",
+  "module": "../../../../es/operators/expression/array/reverseArray.js",
+  "es2015": "../../../../es/operators/expression/array/reverseArray.js",
+  "jsnext:main": "../../../../es/operators/expression/array/reverseArray.js",
+  "types": "../../../../types/operators/expression/array/reverseArray.d.ts",
+  "sideEffects": false
+}

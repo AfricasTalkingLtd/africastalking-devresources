@@ -1,0 +1,8 @@
+{
+  "main": "../../../../lib/operators/expression/string/substrBytes.js",
+  "module": "../../../../es/operators/expression/string/substrBytes.js",
+  "es2015": "../../../../es/operators/expression/string/substrBytes.js",
+  "jsnext:main": "../../../../es/operators/expression/string/substrBytes.js",
+  "types": "../../../../types/operators/expression/string/substrBytes.d.ts",
+  "sideEffects": false
+}

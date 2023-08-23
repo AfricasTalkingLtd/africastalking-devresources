@@ -1,0 +1,8 @@
+{
+  "main": "../lib/core.js",
+  "module": "../es/core.js",
+  "es2015": "../es/core.js",
+  "jsnext:main": "../es/core.js",
+  "types": "../types/core.d.ts",
+  "sideEffects": false
+}

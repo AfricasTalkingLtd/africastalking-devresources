@@ -1,0 +1,8 @@
+{
+  "main": "../../../../lib/operators/expression/string/indexOfBytes.js",
+  "module": "../../../../es/operators/expression/string/indexOfBytes.js",
+  "es2015": "../../../../es/operators/expression/string/indexOfBytes.js",
+  "jsnext:main": "../../../../es/operators/expression/string/indexOfBytes.js",
+  "types": "../../../../types/operators/expression/string/indexOfBytes.d.ts",
+  "sideEffects": false
+}

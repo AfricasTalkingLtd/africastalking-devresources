@@ -1,0 +1,8 @@
+{
+  "main": "../../../../lib/operators/expression/set/setUnion.js",
+  "module": "../../../../es/operators/expression/set/setUnion.js",
+  "es2015": "../../../../es/operators/expression/set/setUnion.js",
+  "jsnext:main": "../../../../es/operators/expression/set/setUnion.js",
+  "types": "../../../../types/operators/expression/set/setUnion.d.ts",
+  "sideEffects": false
+}

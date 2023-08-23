@@ -1,0 +1,8 @@
+{
+  "main": "../../../../lib/operators/expression/trignometry/cosh.js",
+  "module": "../../../../es/operators/expression/trignometry/cosh.js",
+  "es2015": "../../../../es/operators/expression/trignometry/cosh.js",
+  "jsnext:main": "../../../../es/operators/expression/trignometry/cosh.js",
+  "types": "../../../../types/operators/expression/trignometry/cosh.d.ts",
+  "sideEffects": false
+}

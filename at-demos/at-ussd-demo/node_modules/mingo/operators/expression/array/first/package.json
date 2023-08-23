@@ -1,0 +1,8 @@
+{
+  "main": "../../../../lib/operators/expression/array/first.js",
+  "module": "../../../../es/operators/expression/array/first.js",
+  "es2015": "../../../../es/operators/expression/array/first.js",
+  "jsnext:main": "../../../../es/operators/expression/array/first.js",
+  "types": "../../../../types/operators/expression/array/first.d.ts",
+  "sideEffects": false
+}

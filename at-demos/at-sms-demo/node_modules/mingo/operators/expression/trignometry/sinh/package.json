@@ -1,0 +1,8 @@
+{
+  "main": "../../../../lib/operators/expression/trignometry/sinh.js",
+  "module": "../../../../es/operators/expression/trignometry/sinh.js",
+  "es2015": "../../../../es/operators/expression/trignometry/sinh.js",
+  "jsnext:main": "../../../../es/operators/expression/trignometry/sinh.js",
+  "types": "../../../../types/operators/expression/trignometry/sinh.d.ts",
+  "sideEffects": false
+}

@@ -1,0 +1,8 @@
+{
+  "main": "../../../../lib/operators/expression/array/firstN.js",
+  "module": "../../../../es/operators/expression/array/firstN.js",
+  "es2015": "../../../../es/operators/expression/array/firstN.js",
+  "jsnext:main": "../../../../es/operators/expression/array/firstN.js",
+  "types": "../../../../types/operators/expression/array/firstN.d.ts",
+  "sideEffects": false
+}

@@ -1,0 +1,8 @@
+{
+  "main": "../../../../lib/operators/query/array/elemMatch.js",
+  "module": "../../../../es/operators/query/array/elemMatch.js",
+  "es2015": "../../../../es/operators/query/array/elemMatch.js",
+  "jsnext:main": "../../../../es/operators/query/array/elemMatch.js",
+  "types": "../../../../types/operators/query/array/elemMatch.d.ts",
+  "sideEffects": false
+}

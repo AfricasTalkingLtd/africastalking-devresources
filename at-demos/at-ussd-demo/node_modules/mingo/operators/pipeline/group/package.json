@@ -1,0 +1,8 @@
+{
+  "main": "../../../lib/operators/pipeline/group.js",
+  "module": "../../../es/operators/pipeline/group.js",
+  "es2015": "../../../es/operators/pipeline/group.js",
+  "jsnext:main": "../../../es/operators/pipeline/group.js",
+  "types": "../../../types/operators/pipeline/group.d.ts",
+  "sideEffects": false
+}

@@ -1,0 +1,8 @@
+{
+  "main": "../../../lib/operators/window/derivative.js",
+  "module": "../../../es/operators/window/derivative.js",
+  "es2015": "../../../es/operators/window/derivative.js",
+  "jsnext:main": "../../../es/operators/window/derivative.js",
+  "types": "../../../types/operators/window/derivative.d.ts",
+  "sideEffects": false
+}

@@ -1,0 +1,8 @@
+{
+  "main": "../../../lib/operators/expression/trignometry/index.js",
+  "module": "../../../es/operators/expression/trignometry/index.js",
+  "es2015": "../../../es/operators/expression/trignometry/index.js",
+  "jsnext:main": "../../../es/operators/expression/trignometry/index.js",
+  "types": "../../../types/operators/expression/trignometry/index.d.ts",
+  "sideEffects": false
+}

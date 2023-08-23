@@ -1,0 +1,8 @@
+{
+  "main": "../../../../lib/operators/expression/string/concat.js",
+  "module": "../../../../es/operators/expression/string/concat.js",
+  "es2015": "../../../../es/operators/expression/string/concat.js",
+  "jsnext:main": "../../../../es/operators/expression/string/concat.js",
+  "types": "../../../../types/operators/expression/string/concat.d.ts",
+  "sideEffects": false
+}

@@ -1,0 +1,8 @@
+{
+  "main": "../../../../lib/operators/expression/string/regexFindAll.js",
+  "module": "../../../../es/operators/expression/string/regexFindAll.js",
+  "es2015": "../../../../es/operators/expression/string/regexFindAll.js",
+  "jsnext:main": "../../../../es/operators/expression/string/regexFindAll.js",
+  "types": "../../../../types/operators/expression/string/regexFindAll.d.ts",
+  "sideEffects": false
+}

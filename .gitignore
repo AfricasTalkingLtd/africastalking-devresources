@@ -1,0 +1,13 @@
+# General
+.DS_Store
+
+# Thumbnails
+._*
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+.apdisk
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/

@@ -1,0 +1,8 @@
+{
+  "main": "../../../../lib/operators/query/element/type.js",
+  "module": "../../../../es/operators/query/element/type.js",
+  "es2015": "../../../../es/operators/query/element/type.js",
+  "jsnext:main": "../../../../es/operators/query/element/type.js",
+  "types": "../../../../types/operators/query/element/type.d.ts",
+  "sideEffects": false
+}

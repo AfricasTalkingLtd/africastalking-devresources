@@ -1,0 +1,8 @@
+{
+  "main": "../../../../lib/operators/expression/trignometry/atanh.js",
+  "module": "../../../../es/operators/expression/trignometry/atanh.js",
+  "es2015": "../../../../es/operators/expression/trignometry/atanh.js",
+  "jsnext:main": "../../../../es/operators/expression/trignometry/atanh.js",
+  "types": "../../../../types/operators/expression/trignometry/atanh.d.ts",
+  "sideEffects": false
+}

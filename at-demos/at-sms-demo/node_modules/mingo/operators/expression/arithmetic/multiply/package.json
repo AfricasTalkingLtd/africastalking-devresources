@@ -1,0 +1,8 @@
+{
+  "main": "../../../../lib/operators/expression/arithmetic/multiply.js",
+  "module": "../../../../es/operators/expression/arithmetic/multiply.js",
+  "es2015": "../../../../es/operators/expression/arithmetic/multiply.js",
+  "jsnext:main": "../../../../es/operators/expression/arithmetic/multiply.js",
+  "types": "../../../../types/operators/expression/arithmetic/multiply.d.ts",
+  "sideEffects": false
+}

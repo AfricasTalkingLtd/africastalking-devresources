@@ -1,0 +1,8 @@
+{
+  "main": "../../../../lib/operators/expression/array/minN.js",
+  "module": "../../../../es/operators/expression/array/minN.js",
+  "es2015": "../../../../es/operators/expression/array/minN.js",
+  "jsnext:main": "../../../../es/operators/expression/array/minN.js",
+  "types": "../../../../types/operators/expression/array/minN.d.ts",
+  "sideEffects": false
+}

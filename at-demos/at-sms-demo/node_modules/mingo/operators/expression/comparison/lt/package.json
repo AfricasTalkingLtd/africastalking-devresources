@@ -1,0 +1,8 @@
+{
+  "main": "../../../../lib/operators/expression/comparison/lt.js",
+  "module": "../../../../es/operators/expression/comparison/lt.js",
+  "es2015": "../../../../es/operators/expression/comparison/lt.js",
+  "jsnext:main": "../../../../es/operators/expression/comparison/lt.js",
+  "types": "../../../../types/operators/expression/comparison/lt.d.ts",
+  "sideEffects": false
+}

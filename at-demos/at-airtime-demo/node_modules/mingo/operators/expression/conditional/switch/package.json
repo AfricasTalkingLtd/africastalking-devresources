@@ -1,0 +1,8 @@
+{
+  "main": "../../../../lib/operators/expression/conditional/switch.js",
+  "module": "../../../../es/operators/expression/conditional/switch.js",
+  "es2015": "../../../../es/operators/expression/conditional/switch.js",
+  "jsnext:main": "../../../../es/operators/expression/conditional/switch.js",
+  "types": "../../../../types/operators/expression/conditional/switch.d.ts",
+  "sideEffects": false
+}

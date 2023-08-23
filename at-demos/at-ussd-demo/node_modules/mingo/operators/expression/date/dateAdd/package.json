@@ -1,0 +1,8 @@
+{
+  "main": "../../../../lib/operators/expression/date/dateAdd.js",
+  "module": "../../../../es/operators/expression/date/dateAdd.js",
+  "es2015": "../../../../es/operators/expression/date/dateAdd.js",
+  "jsnext:main": "../../../../es/operators/expression/date/dateAdd.js",
+  "types": "../../../../types/operators/expression/date/dateAdd.d.ts",
+  "sideEffects": false
+}

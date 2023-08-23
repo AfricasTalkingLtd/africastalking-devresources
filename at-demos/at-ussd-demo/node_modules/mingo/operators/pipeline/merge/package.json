@@ -1,0 +1,8 @@
+{
+  "main": "../../../lib/operators/pipeline/merge.js",
+  "module": "../../../es/operators/pipeline/merge.js",
+  "es2015": "../../../es/operators/pipeline/merge.js",
+  "jsnext:main": "../../../es/operators/pipeline/merge.js",
+  "types": "../../../types/operators/pipeline/merge.d.ts",
+  "sideEffects": false
+}

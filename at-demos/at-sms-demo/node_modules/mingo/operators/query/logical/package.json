@@ -1,0 +1,8 @@
+{
+  "main": "../../../lib/operators/query/logical/index.js",
+  "module": "../../../es/operators/query/logical/index.js",
+  "es2015": "../../../es/operators/query/logical/index.js",
+  "jsnext:main": "../../../es/operators/query/logical/index.js",
+  "types": "../../../types/operators/query/logical/index.d.ts",
+  "sideEffects": false
+}

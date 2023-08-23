@@ -1,0 +1,8 @@
+{
+  "main": "../../../../lib/operators/expression/object/unsetField.js",
+  "module": "../../../../es/operators/expression/object/unsetField.js",
+  "es2015": "../../../../es/operators/expression/object/unsetField.js",
+  "jsnext:main": "../../../../es/operators/expression/object/unsetField.js",
+  "types": "../../../../types/operators/expression/object/unsetField.d.ts",
+  "sideEffects": false
+}

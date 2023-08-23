@@ -1,0 +1,8 @@
+{
+  "main": "../../../lib/operators/query/evaluation/index.js",
+  "module": "../../../es/operators/query/evaluation/index.js",
+  "es2015": "../../../es/operators/query/evaluation/index.js",
+  "jsnext:main": "../../../es/operators/query/evaluation/index.js",
+  "types": "../../../types/operators/query/evaluation/index.d.ts",
+  "sideEffects": false
+}
