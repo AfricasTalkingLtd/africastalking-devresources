@@ -1,8 +1,9 @@
 # Welcome to the Africa's Talking Community :sunglasses:
 
 ## Where to get started? Let us help you :)
-- Click [here](/at-accountsetup/) for a guide on how to create an Africa's Talking account.
-- Click [here](https://africastalking.slack.com) to join the Africa's Talking Community Slack for information updates.
+- Click [here](/at-accountsetup/) for a guide on how to **create an Africa's Talking account**.
+- Click [here](https://africastalking.slack.com) to join the Africa's Talking Community **Slack** for information updates.
+- Click [here](https://github.com/AfricasTalkingLtd/africastalking-rust) for the **Africa's Talking Rust SDK**. 
 
 ## What is Africa's Talking?
 
