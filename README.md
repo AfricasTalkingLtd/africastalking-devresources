@@ -3,7 +3,6 @@
 ## Where to get started? Let us help you :)
 - Click [here](/at-accountsetup/) for a guide on how to **create an Africa's Talking account**.
 - Click [here](https://africastalking.slack.com) to join the Africa's Talking Community **Slack** for information updates.
-- Click [here](https://github.com/AfricasTalkingLtd/africastalking-rust) for the **Africa's Talking Rust SDK**. 
 
 ## What is Africa's Talking?
 
@@ -44,6 +43,10 @@ Then, to __*create an account*__ and get hands-on in using our APIs and SDKs, fo
 Thinking of samples and code snippets of how to implement and consume our APIs? Check out some [demos here](/at-demos/).
 
 You are also welcome to contribute to __*open-source*__ [here](https://github.com/AfricasTalkingLtd).
+
+Here's a few community SDK projects you can also have a look at:
+
+- [Rust SDK](https://github.com/AfricasTalkingLtd/africastalking-rust)
 
 Finally, do NOT miss out on our events and communities - They are always worth it!
 
