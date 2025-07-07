@@ -1,4 +1,4 @@
-# 📝 Africa's Talking Documentation Challenge - June 2025
+# 📝 Africa's Talking Documentation Challenge - June - July 2025
 
 Welcome to the **Africa's Talking Documentation Challenge!** This is a month-long open challenge inviting developers from across Africa (and beyond!) to contribute to improving the documentation for Africa's Talking SDKs, APIs, and platform usage. Whether you’re a seasoned contributor or a first-time documenter, this is your chance to build in public, improve developer experience, and get recognized.
 
@@ -37,10 +37,9 @@ Welcome to the **Africa's Talking Documentation Challenge!** This is a month-lon
 | Date | Milestone |
 |------|-----------|
 | June 1 | Challenge Kick-off + Contributor Guide Release |
-| June 5 | First Checkpoint: Early Submissions Feedback |
-| June 16 | Midpoint Recognition: Top 5 Contributors Highlighted |
-| June 25 | Final Submissions Deadline |
-| June 30 | Winners & Showcase + Swag Drop |
+| June 30 | Midpoint |
+| July 31 | Final Submissions Deadline |
+| August 5 | Winners & Showcase + Swag Drop |
 
 ---
 
